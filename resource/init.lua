@@ -1,6 +1,7 @@
 resource = {};
 resource.name = 'hyrule';
 resource.current_name = GetCurrentResourceName();
+resource.is_devmode = flib.variable.tobool(GetConvar('hyrule_devmode', "true")) and true or false;
 
 if (lib.is_server) then
     lib.events.on(eCitizenFXEvents.onResourceStart, function(_, _, resourceName)
@@ -25,7 +26,11 @@ if (lib.is_server) then
                 end
 
                 if (latest < version) then
-                    console.err(('Your version doesn\'t match any version in our repository. Latest version found on our repository: ^3%s'):format(latest));
+                    if (not resource.is_devmode) then
+                        console.err(('Your version doesn\'t match any version in our repository. Latest version found on our repository: ^3%s'):format(latest));
+                    else
+                        console.warn(('Devmode id enable, your work version is ^2%s^0 and current version downloadable is ^6%s'):format(version, latest));
+                    end
                 elseif (latest > version) then
                     console.warn(('You are using a lower version of %s ^7(^8%s^7)'):format(resource.name, version));
                     console.warn(('You can download the latest version here ^7(^6%s^7) (^5%s^7)'):format(latest, data.html_url));
