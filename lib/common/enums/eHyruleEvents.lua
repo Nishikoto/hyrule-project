@@ -1,0 +1,3 @@
+return {
+    playerLoaded = 'Hyrule.PlayerLoaded'
+};
