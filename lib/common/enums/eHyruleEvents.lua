@@ -1,3 +1,6 @@
 return {
-    playerLoaded = 'Hyrule.PlayerLoaded'
+    playerJoined = 'Hyrule.PlayerJoined',
+    playerLoaded = 'Hyrule.PlayerLoaded',
+    playerDeath = 'Hyrule.PlayerDeath',
+    playerDeathToServer = 'Hyrule.PlayerDeathToServer',
 };

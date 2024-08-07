@@ -1,15 +1,15 @@
 resource = {};
 resource.name = 'hyrule';
 resource.current_name = GetCurrentResourceName();
-resource.is_devmode = flib.variable.tobool(GetConvar('hyrule_devmode', "true")) and true or false;
+resource.is_devmode = flib.common.variable.tobool(GetConvar('hyrule_devmode', "false"));
 
 if (lib.is_server) then
     lib.events.on(eCitizenFXEvents.onResourceStart, function(_, _, resourceName)
-        assert(resource.current_name == resourceName, ('The resource does have the same name (%s ~= %s)!'):format(resource.current_name, resourceName))
+        --assert(resource.current_name == resourceName, ('The resource does have the same name (%s ~= %s)!'):format(resource.current_name, resourceName))
 
-        if (resource.name ~= resourceName) then
-            return console.err(('The %s resource does not have a correct name!'):format(resource.name));
-        end
+        -- if (resource.name ~= resourceName) then
+        --     return console.err(('The %s resource does not have a correct name!'):format(resource.name));
+        -- end
 
         local version = GetResourceMetadata(resource.name, 'version', 0);
         

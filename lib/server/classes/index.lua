@@ -1,1 +1,0 @@
-flib.class.player = require 'lib.server.classes.player';

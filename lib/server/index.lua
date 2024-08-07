@@ -1,4 +1,5 @@
-flib = {};
-flib.class = {};
+flib.server = {};
 
-require 'lib.server.classes.index';
+flib.server.class = {};
+
+flib.server.class.player = require 'lib.server.classes.player';

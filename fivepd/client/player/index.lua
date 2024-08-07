@@ -1,1 +1,0 @@
-require 'fivepd.client.player.spawn';

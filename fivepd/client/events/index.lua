@@ -1,0 +1,1 @@
+require 'fivepd.client.events.onPlayerDeath';

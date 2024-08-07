@@ -6,19 +6,20 @@ lib.events.on(eCitizenFXEvents.playerConnecting, function(instanceEvent, tempora
     Wait(2500);
 
     local identifiers = {
-        license = flib.class.player.GetIdentifier(temporaryId, eIdentifierType.License),
-        steam = flib.class.player.GetIdentifier(temporaryId, eIdentifierType.Steam),
-        discord = flib.class.player.GetIdentifier(temporaryId, eIdentifierType.Discord),
-        fivem = flib.class.player.GetIdentifier(temporaryId, eIdentifierType.FiveM),
-        ip = flib.class.player.GetIdentifier(temporaryId, eIdentifierType.IP),
-        live = flib.class.player.GetIdentifier(temporaryId, eIdentifierType.Live),
-        xbox = flib.class.player.GetIdentifier(temporaryId, eIdentifierType.Xbox),
+        license = flib.server.class.player.GetIdentifier(temporaryId, eIdentifierType.License),
+        steam = flib.server.class.player.GetIdentifier(temporaryId, eIdentifierType.Steam),
+        discord = flib.server.class.player.GetIdentifier(temporaryId, eIdentifierType.Discord),
+        fivem = flib.server.class.player.GetIdentifier(temporaryId, eIdentifierType.FiveM),
+        ip = flib.server.class.player.GetIdentifier(temporaryId, eIdentifierType.IP),
+        live = flib.server.class.player.GetIdentifier(temporaryId, eIdentifierType.Live),
+        xbox = flib.server.class.player.GetIdentifier(temporaryId, eIdentifierType.Xbox),
     }
 
     -- print(identifiers)
 
-    -- TODO: Get if player is banned
+    -- TODO: Get if player is banned, Add Webhook player 
 
     Wait(5000);
-    deferrals.done('is done')
+    -- deferrals.done('is done')
+    deferrals.done()
 end)
