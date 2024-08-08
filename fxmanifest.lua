@@ -3,7 +3,7 @@ game 'gta5';
 lua54 'yes';
 
 author 'Nishikoto';
-version '0.1.0';
+version '0.1.1';
 
 shared_script '@lib/imports.lua';
 shared_script 'lib/index.lua';
