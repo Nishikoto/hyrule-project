@@ -1,51 +1,57 @@
 ---@class HFPD.Weapon
 local Weapon = Class.new 'HFPD.Weapon';
 
-local function get_weapon(hash)
-    for _, w in pairs(eWeapon) do
-        if (w.hash.joaat == hash) then
-            return w;
+local function search_weapon_table(weapon_str)
+    for weapon_name,table in pairs(eWeapons) do
+        if (weapon_name == weapon_str) then
+            return table;
         end
     end
 end
 
----@param weapon? hash|modelName
+---@param weapon? eWeapons|weaponModel
 function Weapon:Constructor(weapon)
-    if (type((weapon):upper()) == 'string') then
-        if (not weapon:find('weapon_')) then
-            self.hweapon = joaat('WEAPON_'..weapon);
-        else
-            self.hweapon = joaat(weapon);
-        end
-    elseif (type(weapon) == 'number') then
-        self.hweapon = weapon;
-    end
-end
+    if (not type(weapon) == 'table') then 
+        if (not type(weapon) == 'string') then return end;
 
-function Weapon:GetType()
-    return get_weapon(self.hweapon).type;
+        local weapon = search_weapon_table(weapon);
+    end;
+
+    if (weapon == nil) then
+        return console.err('the weapon table or string is not valid, please retry!');
+    end
+
+    self.name = weapon.name;
+    self.hash = lib.game.hash(self.name);
+    self.label = weapon.label;
+
+    if (weapon.components) then
+        self.components = weapon.components;
+    else
+        self.components = false;
+    end  
 end
 
 function Weapon:GetName()
-    return get_weapon(self.hweapon).name;
+    return self.name;
 end
 
 function Weapon:GetLabel()
-    return get_weapon(self.hweapon).label;
+    return self.label;
 end
 
-function Weapon:GetJoaatHash()
-    return get_weapon(self.hweapon).hash.joaat;
-end
-
-function Weapon:GetHexHash()
-    return get_weapon(self.hweapon).hash.hex;
+function Weapon:GetHash()
+    return self.hash;
 end
 
 function Weapon:GetComponents()
-    return get_weapon(self.hweapon).component;
+    return self.components;
 end
 
 -- TODO: Set Component
+
+function Weapon:AddComponents(componentsHash)
+    return GiveWeaponComponentToPed(player:GetPed().id, self.hash, lib.game.hash(componentsHash));
+end
 
 return Weapon;

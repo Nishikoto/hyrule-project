@@ -1,4 +1,5 @@
 local menu = require 'fivepd.client.menus.main.main';
+require 'fivepd.client.menus.main.self';
 
 RegisterCommand(fConfig.mainMenu.command, function()
     local is_dead = player:GetPed():IsDead();
@@ -8,5 +9,3 @@ RegisterCommand(fConfig.mainMenu.command, function()
 end)
 
 RegisterKeyMapping(fConfig.mainMenu.command, 'Main Menu', 'keyboard', fConfig.mainMenu.bind);
-
-return menu;

@@ -1,1685 +1,1284 @@
+---@class eWeapons
 return {
-    {
-        type = 'MELEE',
+    -- Melee
+    
+    ---<h4>Unarmed (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/b/b7/Fist-icon.png" width="80px"> 
+    unarmed = {
+        name = 'WEAPON_UNARMED',
+        label = 'Fist'
+    },
+    ---<h4>Antique Cavalry Dagger (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/f/f5/Antique-cavalry-dagger-icon.png/164px-Antique-cavalry-dagger-icon.png" width="120px"> 
+    dagger = {
         name = 'WEAPON_DAGGER',
-        label = 'Antique Cavalry Dagger',
-        hash = {
-            joaat = joaat('WEAPON_DAGGER'),
-            hex = '0x92A27487'
-        },
-        components = {}
+        label = 'Antique Cavalry Dagger'
     },
-    {
-        type = 'MELEE',
+    ---<h4>Baseball Bat (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/8/8b/Baseball-bat-icon.png/164px-Baseball-bat-icon.png" width="120px"> 
+    bat = {
         name = 'WEAPON_BAT',
-        label = 'Baseball Bat',
-        hash = {
-            joaat = joaat('WEAPON_BAT'),
-            hex = '0x958A4A8F'
-        },
-        components = {}
+        label = 'Baseball Bat'
     },
-    {
-        type = 'MELEE',
+    ---<h4>Broken Bottle (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/5/5b/Broken-bottle-icon.png" width="100px"> 
+    bottle = {
         name = 'WEAPON_BOTTLE',
-        label = 'Broken Bottle',
-        hash = {
-            joaat = joaat('WEAPON_BOTTLE'),
-            hex = '0xF9E6AA4B'
-        },
-        components = {}
+        label = 'Broken Bottler'
     },
-    {
-        type = 'MELEE',
+    ---<h4>Crowbar (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/8/8a/Crowbar-icon.png/164px-Crowbar-icon.png" width="120px"> 
+    crowbar = {
         name = 'WEAPON_CROWBAR',
-        label = 'Crowbar',
-        hash = {
-            joaat = joaat('WEAPON_CROWBAR'),
-            hex = '0x84BD7BFD'
-        },
-        components = {}
+        label = 'Crowbar'
     },
-    {
-        type = 'MELEE',
+    ---<h4>Flashlight (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/8/85/Flashlight-icon.png/164px-Flashlight-icon.png" width="100px"> 
+    flashlight = {
         name = 'WEAPON_FLASHLIGHT',
-        label = 'Flashlight',
-        hash = {
-            joaat = joaat('WEAPON_FLASHLIGHT'),
-            hex = '0x8BB05FD7'
-        },
-        components = {}
+        label = 'Flashlight'
     },
-    {
-        type = 'MELEE',
+    ---<h4>Golf Club (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/c/cb/Golf-club-icon.png/164px-Golf-club-icon.png" width="120px"> 
+    golfclub = {
         name = 'WEAPON_GOLFCLUB',
-        label = 'Golf Club',
-        hash = {
-            joaat = joaat('WEAPON_GOLFCLUB'),
-            hex = '0x440E4788'
-        },
-        components = {}
+        label = 'Golf Club'
     },
-    {
-        type = 'MELEE',
+    ---<h4>Hammer (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/e/ec/Hammer-icon.png/164px-Hammer-icon.png" width="120px"> 
+    hammer = {
         name = 'WEAPON_HAMMER',
-        label = 'Hammer',
-        hash = {
-            joaat = joaat('WEAPON_HAMMER'),
-            hex = '0x4E875F73'
-        },
-        components = {}
+        label = 'Hammer'
     },
-    {
-        type = 'MELEE',
+    ---<h4>Hatchet (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/e/eb/Hatchet-icon.png/164px-Hatchet-icon.png" width="120px"> 
+    hatchet = {
         name = 'WEAPON_HATCHET',
-        label = 'Hatchet',
-        hash = {
-            joaat = joaat('WEAPON_HATCHET'),
-            hex = '0xF9DCBF2D'
-        },
-        components = {}
+        label = 'Hatchet'
     },
-    {
-        type = 'MELEE',
-        name = 'WEAPON_KNIFE',
-        label = 'Knife',
-        hash = {
-            joaat = joaat('WEAPON_KNIFE'),
-            hex = '0x99B507EA'
-        },
-        components = {}
-    },
-    {
-        type = 'MELEE',
-        name = 'WEAPON_MACHETE',
-        label = 'Machete',
-        hash = {
-            joaat = joaat('WEAPON_MACHETE'),
-            hex = '0xDD5DF8D9'
-        },
-        components = {}
-    },
-    {
-        type = 'MELEE',
-        name = 'WEAPON_SWITCHBLADE',
-        label = 'Switchblade',
-        hash = {
-            joaat = joaat('WEAPON_SWITCHBLADE'),
-            hex = '0xDFE37640'
-        },
-        components = {
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_SWITCHBLADE_VARMOD_BASE',
-                label = 'Default Handle',
-                hash = {
-                    joaat = joaat('COMPONENT_SWITCHBLADE_VARMOD_BASE'),
-                    hex = '0x9137A500'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_SWITCHBLADE_VARMOD_VAR1',
-                label = 'VIP Variant',
-                hash = {
-                    joaat = joaat('COMPONENT_SWITCHBLADE_VARMOD_VAR1'),
-                    hex = '0x5B3E7DB6'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_SWITCHBLADE_VARMOD_VAR2',
-                label = 'Bodyguard Variant',
-                hash = {
-                    joaat = joaat('COMPONENT_SWITCHBLADE_VARMOD_VAR2'),
-                    hex = '0xE7939662'
-                }
-            },
-        }
-    },
-    {
-        type = 'MELEE',
-        name = 'WEAPON_NIGHTSTICK',
-        label = 'Nightstick',
-        hash = {
-            joaat = joaat('WEAPON_NIGHTSTICK'),
-            hex = '0x678B81B1'
-        },
-        components = {}
-    },
-    {
-        type = 'MELEE',
-        name = 'WEAPON_WRENCH',
-        label = 'Pipe Wrench',
-        hash = {
-            joaat = joaat('WEAPON_WRENCH'),
-            hex = '0x19044EE0'
-        },
-        components = {}
-    },
-    {
-        type = 'MELEE',
-        name = 'WEAPON_BATTLAXE',
-        label = 'Battle Axe',
-        hash = {
-            joaat = joaat('WEAPON_BATTLAXE'),
-            hex = '0xCD274149'
-        },
-        components = {}
-    },
-    {
-        type = 'MELEE',
-        name = 'WEAPON_POOLCUE',
-        label = 'Pool Cue',
-        hash = {
-            joaat = joaat('WEAPON_POOLCUE'),
-            hex = '0x94117305'
-        },
-        components = {}
-    },
-    {
-        type = 'MELEE',
-        name = 'WEAPON_STONE_HATCHET',
-        label = 'Stone Hatchet',
-        hash = {
-            joaat = joaat('WEAPON_STONE_HATCHET'),
-            hex = '0x3813FC08'
-        },
-        components = {}
-    },
-    {
-        type = 'MELEE',
-        name = 'WEAPON_CANDYCANE',
-        label = 'Candy Cane',
-        hash = {
-            joaat = joaat('WEAPON_CANDYCANE'),
-            hex = '0x6589186A'
-        },
-        components = {}
-    },
-    {
-        type = 'MELEE',
+    ---<h4>Knuckle (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/b/b7/Knuckles-icon.png" width="100px"> 
+    knuckle = {
         name = 'WEAPON_KNUCKLE',
         label = 'Brass Knuckles',
-        hash = {
-            joaat = joaat('WEAPON_KNUCKLE'),
-            hex = '0xD8DF3C3C'
-        },
         components = {
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_KNUCKLE_VARMOD_BASE',
-                label = 'Base Model',
-                hash = {
-                    joaat = joaat('COMPONENT_KNUCKLE_VARMOD_BASE'),
-                    hex = '0xF3462F33'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_KNUCKLE_VARMOD_PIMP',
-                label = 'The Pimp',
-                hash = {
-                    joaat = joaat('COMPONENT_KNUCKLE_VARMOD_PIMP'),
-                    hex = '0xC613F685'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_KNUCKLE_VARMOD_BALLAS',
-                label = 'The Ballas',
-                hash = {
-                    joaat = joaat('COMPONENT_KNUCKLE_VARMOD_BALLAS'),
-                    hex = '0xEED9FD63'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_KNUCKLE_VARMOD_DOLLAR',
-                label = 'The Hustler',
-                hash = {
-                    joaat = joaat('COMPONENT_KNUCKLE_VARMOD_DOLLAR'),
-                    hex = '0x50910C31'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_KNUCKLE_VARMOD_DIAMOND',
-                label = 'The Rock',
-                hash = {
-                    joaat = joaat('COMPONENT_KNUCKLE_VARMOD_DIAMOND'),
-                    hex = '0x9761D9DC'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_KNUCKLE_VARMOD_HATE',
-                label = 'The Hater',
-                hash = {
-                    joaat = joaat('COMPONENT_KNUCKLE_VARMOD_HATE'),
-                    hex = '0x7DECFE30'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_KNUCKLE_VARMOD_LOVE',
-                label = 'The Lover',
-                hash = {
-                    joaat = joaat('COMPONENT_KNUCKLE_VARMOD_LOVE'),
-                    hex = '0x3F4E8AA6'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_KNUCKLE_VARMOD_PLAYER',
-                label = 'The Player',
-                hash = {
-                    joaat = joaat('COMPONENT_KNUCKLE_VARMOD_PLAYER'),
-                    hex = '0x8B808BB'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_KNUCKLE_VARMOD_KING',
-                label = 'The King',
-                hash = {
-                    joaat = joaat('COMPONENT_KNUCKLE_VARMOD_KING'),
-                    hex = '0xE28BABEF'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_KNUCKLE_VARMOD_VAGOS',
-                label = 'The Vagos',
-                hash = {
-                    joaat = joaat('COMPONENT_KNUCKLE_VARMOD_VAGOS'),
-                    hex = '0x7AF3F785'
-                }
-            },
+            base = 'COMPONENT_KNUCKLE_VARMOD_BASE',
+            pimp = 'COMPONENT_KNUCKLE_VARMOD_PIMP',
+            ballas = 'COMPONENT_KNUCKLE_VARMOD_BALLAS',
+            hutler = 'COMPONENT_KNUCKLE_VARMOD_DOLLAR',
+            rock = 'COMPONENT_KNUCKLE_VARMOD_DIAMOND',
+            hater = 'COMPONENT_KNUCKLE_VARMOD_HATE',
+            lover = 'COMPONENT_KNUCKLE_VARMOD_LOVE',
+            player = 'COMPONENT_KNUCKLE_VARMOD_PLAYER',
+            king = 'COMPONENT_KNUCKLE_VARMOD_KING',
+            vagos = 'COMPONENT_KNUCKLE_VARMOD_VAGOS'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Knife (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/8/8c/Knife-icon.png/164px-Knife-icon.png" width="120px"> 
+    knife = {
+        name = 'WEAPON_KNIFE',
+        label = 'Knife'
+    },
+    ---<h4>Machete (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/d/dc/Machete-icon.png/164px-Machete-icon.png" width="120px"> 
+    machete = {
+        name = 'WEAPON_MACHETE',
+        label = 'Machete'
+    },
+    ---<h4>Switchblade (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/c/ce/Switch-blade-icon.png/164px-Switch-blade-icon.png" width="120px"> 
+    switchblade = {
+        name = 'WEAPON_SWITCHBLADE',
+        label = 'Switchblade',
+        components = {
+            base = 'COMPONENT_SWITCHBLADE_VARMOD_BASE',
+            vip = 'COMPONENT_SWITCHBLADE_VARMOD_VAR1',
+            bodyguard = 'COMPONENT_SWITCHBLADE_VARMOD_VAR2'
+        }
+    },
+    ---<h4>Nightstick (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/e/e6/Nightstick-icon.png/164px-Nightstick-icon.png" width="120px"> 
+    nightstick = {
+        name = 'WEAPON_NIGHTSTICK',
+        label = 'Nightstick'
+    },
+    ---<h4>Pipe Wrench (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/2/22/Pipe-wrench-icon.png/164px-Pipe-wrench-icon.png" width="120px"> 
+    wrench = {
+        name = 'WEAPON_WRENCH',
+        label = 'Pipe Wrench'
+    },
+    ---<h4>Battle Axe (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/3/3b/Battle-axe-icon.png/164px-Battle-axe-icon.png" width="120px"> 
+    battleaxe = {
+        name = 'WEAPON_BATTLAXE',
+        label = 'Battle Axe'
+    },
+    ---<h4>Pool Cue (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/3/3a/Pool-cue-icon.png/164px-Pool-cue-icon.png" width="120px"> 
+    poolcue = {
+        name = 'WEAPON_POOLCUE',
+        label = 'Pool Cue'
+    },
+    ---<h4>Stone Hatchet (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/2/21/Stone-hatchet-icon.png/164px-Stone-hatchet-icon.png" width="120px"> 
+    stone_hatchet = {
+        name = 'WEAPON_STONE_HATCHET',
+        label = 'Stone Hatchet'
+    },
+    ---<h4>Candy Cane (Melee)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/5/5c/Candy-cane-icon.png/164px-Candy-cane-icon.png" width="120px"> 
+    candycane = {
+        name = 'WEAPON_CANDYCANE',
+        label = 'Candy Cane'
+    },
+    -- Handguns
+    
+    ---<h4>Pistol (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/9/95/Pistol-icon.png" width="100px"> 
+    pistol = {
         name = 'WEAPON_PISTOL',
         label = 'Pistol',
-        hash = {
-            joaat = joaat('WEAPON_PISTOL'),
-            hex = '0x1B06D571'
-        },
         components = {
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_PISTOL_CLIP_01',
-                label = 'Default Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_CLIP_01'),
-                    hex = '0xFED0FD71'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_PISTOL_CLIP_02',
-                label = 'Extended Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_CLIP_02'),
-                    hex = '0xED265A1C'
-                }
-            },
-            {
-                type = 'LIGHT',
-                name = 'COMPONENT_AT_PI_FLSH',
-                label = 'Flashlight',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_FLSH'),
-                    hex = '0x359B7AAE'
-                }
-            },
-            {
-                type = 'SUPPRESSOR',
-                name = 'COMPONENT_AT_PI_SUPP_02',
-                label = 'Suppressor',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_SUPP_02'),
-                    hex = '0x65EA7EBB'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_PISTOL_VARMOD_LUXE',
-                label = 'Yusuf Amir Luxury Finish',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_VARMOD_LUXE'),
-                    hex = '0xD7391086'
-                }
-            },
+            default_clip = 'COMPONENT_PISTOL_CLIP_01',
+            extended_clip = 'COMPONENT_PISTOL_CLIP_02',
+            flashlight = 'COMPONENT_AT_PI_FLSH',
+            suppressor = 'COMPONENT_AT_PI_SUPP_02',
+            yusuf_amir_luxury_finish = 'COMPONENT_PISTOL_VARMOD_LUXE'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Pistol MK2 (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/4/43/Pistol-mk2-icon.png" width="100px">
+    pistol_mk2 = {
         name = 'WEAPON_PISTOL_MK2',
-        label = 'Pistol MKII',
-        hash = {
-            joaat = joaat('WEAPON_PISTOL_MK2'),
-            hex = '0xBFE256D4'
-        },
+        label = 'Pistol MK2',
         components = {
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_PISTOL_MK2_CLIP_01',
-                label = 'Default Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CLIP_01'),
-                    hex = '0x94F42D62'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_PISTOL_MK2_CLIP_02',
-                label = 'Extended Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CLIP_02'),
-                    hex = '0x5ED6C128'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_PISTOL_MK2_CLIP_TRACER',
-                label = 'Tracer Rounds',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CLIP_TRACER'),
-                    hex = '0x25CAAEAF'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_PISTOL_MK2_CLIP_INCENDIARY',
-                label = 'Incendiary Rounds',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CLIP_INCENDIARY'),
-                    hex = '0x2BBD7A3A'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_PISTOL_MK2_CLIP_HOLLOWPOINT',
-                label = 'Hollow Point Rounds',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CLIP_HOLLOWPOINT'),
-                    hex = '0x85FEA109'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_PISTOL_MK2_CLIP_FMJ',
-                label = 'Full Metal Jacket Rounds',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CLIP_FMJ'),
-                    hex = '0x4F37DF2A'
-                }
-            },
-            {
-                type = 'SCOPE',
-                name = 'COMPONENT_AT_PI_RAIL',
-                label = 'Mounted Scope',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_RAIL'),
-                    hex = '0x8ED4BB70'
-                }
-            },
-            {
-                type = 'LIGHT',
-                name = 'COMPONENT_AT_PI_FLSH_02',
-                label = 'Flashlight',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_FLSH_02'),
-                    hex = '0x43FD595B'
-                }
-            },
-            {
-                type = 'SUPPRESSOR',
-                name = 'COMPONENT_AT_PI_SUPP_02',
-                label = 'Suppressor',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_SUPP_02'),
-                    hex = '0x65EA7EBB'
-                }
-            },
-            {
-                type = 'COMPENSATOR',
-                name = 'COMPONENT_AT_PI_COMP',
-                label = 'Compensator',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_COMP'),
-                    hex = '0x21E34793'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_PISTOL_MK2_CAMO',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO'),
-                    hex = '0x5C6C749C'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_02',
-                label = 'Brushstroke Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_02'),
-                    hex = '0x15F7A390'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_03',
-                label = 'Woodland Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_03'),
-                    hex = '0x968E24DB'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_04',
-                label = 'Skull',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_04'),
-                    hex = '0x17BFA99'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_05',
-                label = 'Sessanta Nove',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_05'),
-                    hex = '0xF2685C72'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_06',
-                label = 'Perseus',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_06'),
-                    hex = '0xDD2231E6'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_07',
-                label = 'Leopard',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_07'),
-                    hex = '0xBB43EE76'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_09',
-                label = 'Zebra',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_09'),
-                    hex = '0x5F31B653'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_AT_PI_COMP',
-                label = 'Geometric',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_COMP'),
-                    hex = '0x21E34793'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_10',
-                label = 'Boom!',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_10'),
-                    hex = '0x697E19A0'
-                }
-            },
-            {
-                type = 'CAMO_IND',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_IND_01',
-                label = 'Patriotic',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_IND_01'),
-                    hex = '0x930CB951'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_SLIDE',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_SLIDE'),
-                    hex = '0xB4FC92B0'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_02_SLIDE',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_02_SLIDE'),
-                    hex = '0x1A1F1260'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_03_SLIDE',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_03_SLIDE'),
-                    hex = '0xE4E00B70'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_04_SLIDE',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_04_SLIDE'),
-                    hex = '0x2C298B2B'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_05_SLIDE',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_05_SLIDE'),
-                    hex = '0xDFB79725'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_06_SLIDE',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_06_SLIDE'),
-                    hex = '0x6BD7228C'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_07_SLIDE',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_07_SLIDE'),
-                    hex = '0x9DDBCF8C'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_08_SLIDE',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_08_SLIDE'),
-                    hex = '0xB319A52C'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_09_SLIDE',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_09_SLIDE'),
-                    hex = '0xC6836E12'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_10_SLIDE',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_10_SLIDE'),
-                    hex = '0x43B1B173'
-                }
-            },
-            {
-                type = 'CAMO_IND_SLIDE',
-                name = 'COMPONENT_PISTOL_MK2_CAMO_IND_01_SLIDE',
-                label = 'Patriotic',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL_MK2_CAMO_IND_01_SLIDE'),
-                    hex = '0x4ABDA3FA'
-                }
-            },
+            default_clip = 'COMPONENT_PISTOL_MK2_CLIP_01',
+            extended_clip = 'COMPONENT_PISTOL_MK2_CLIP_02',
+            tracer_rounds = 'COMPONENT_PISTOL_MK2_CLIP_TRACER',
+            incendiary_rounds = 'COMPONENT_PISTOL_MK2_CLIP_INCENDIARY',
+            hollow_point_rounds = 'COMPONENT_PISTOL_MK2_CLIP_HOLLOWPOINT',
+            full_metal_jacket_rounds = 'COMPONENT_PISTOL_MK2_CLIP_FMJ',
+            mounted_scope = 'COMPONENT_AT_PI_RAIL',
+            flashlight = 'COMPONENT_AT_PI_FLSH_02',
+            suppressor = 'COMPONENT_AT_PI_SUPP_02',
+            compensator = 'COMPONENT_AT_PI_COMP',
+            digital_camo = 'COMPONENT_PISTOL_MK2_CAMO',
+            brushstroke_camo = 'COMPONENT_PISTOL_MK2_CAMO_02',
+            woodland_camo = 'COMPONENT_PISTOL_MK2_CAMO_03',
+            skull = 'COMPONENT_PISTOL_MK2_CAMO_04',
+            sessanta_nove = 'COMPONENT_PISTOL_MK2_CAMO_05',
+            perseus = 'COMPONENT_PISTOL_MK2_CAMO_06',
+            leopard = 'COMPONENT_PISTOL_MK2_CAMO_07',
+            zebra = 'COMPONENT_PISTOL_MK2_CAMO_08',
+            geometric = 'COMPONENT_PISTOL_MK2_CAMO_09',
+            boom = 'COMPONENT_PISTOL_MK2_CAMO_10',
+            patriotic_ind = 'COMPONENT_PISTOL_MK2_CAMO_IND_01',
+            digital_camo_01 = 'COMPONENT_PISTOL_MK2_CAMO_SLIDE',
+            digital_camo_02 = 'COMPONENT_PISTOL_MK2_CAMO_02_SLIDE',
+            digital_camo_03 = 'COMPONENT_PISTOL_MK2_CAMO_03_SLIDE',
+            digital_camo_04 = 'COMPONENT_PISTOL_MK2_CAMO_04_SLIDE',
+            digital_camo_05 = 'COMPONENT_PISTOL_MK2_CAMO_05_SLIDE',
+            digital_camo_06 = 'COMPONENT_PISTOL_MK2_CAMO_06_SLIDE',
+            digital_camo_07 = 'COMPONENT_PISTOL_MK2_CAMO_07_SLIDE',
+            digital_camo_08 = 'COMPONENT_PISTOL_MK2_CAMO_08_SLIDE',
+            digital_camo_09 = 'COMPONENT_PISTOL_MK2_CAMO_09_SLIDE',
+            digital_camo_10 = 'COMPONENT_PISTOL_MK2_CAMO_10_SLIDE',
+            patriotic_ind_slide = 'COMPONENT_PISTOL_MK2_CAMO_IND_01_SLIDE'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Combat Pistol (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/1/16/Combat-pistol-icon.png" width="100px">
+    combatpistol = {
         name = 'WEAPON_COMBATPISTOL',
         label = 'Combat Pistol',
-        hash = {
-            joaat = joaat('WEAPON_COMBATPISTOL'),
-            hex = '0x5EF9FEC4'
-        },
         components = {
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_COMBATPISTOL_CLIP_01',
-                label = 'Default Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_COMBATPISTOL_CLIP_01'),
-                    hex = '0x721B079'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_COMBATPISTOL_CLIP_02',
-                label = 'Extended Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_COMBATPISTOL_CLIP_02'),
-                    hex = '0xD67B4F2D'
-                }
-            },
-            {
-                type = 'LIGHT',
-                name = 'COMPONENT_AT_PI_FLSH',
-                label = 'Flashlight',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_FLSH'),
-                    hex = '0x359B7AAE'
-                }
-            },
-            {
-                type = 'SUPPRESSOR',
-                name = 'COMPONENT_AT_PI_SUPP',
-                label = 'Suppressor',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_SUPP'),
-                    hex = '0xC304849A'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER',
-                label = 'Yusuf Amir Luxury Finish',
-                hash = {
-                    joaat = joaat('COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER'),
-                    hex = '0xC6654D72'
-                }
-            },
+            default_clip = 'COMPONENT_COMBATPISTOL_CLIP_01',
+            extended_clip = 'COMPONENT_COMBATPISTOL_CLIP_02',
+            flashlight = 'COMPONENT_AT_PI_FLSH',
+            suppressor = 'COMPONENT_AT_PI_SUPP',
+            yusuf_amir_luxury_finish = 'COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>AP Pistol (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/4/4d/Appistol-icon.png" width="100px">
+    appistol = {
         name = 'WEAPON_APPISTOL',
         label = 'AP Pistol',
-        hash = {
-            joaat = joaat('WEAPON_APPISTOL'),
-            hex = '0x22D8FE39'
-        },
         components = {
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_APPISTOL_CLIP_01',
-                label = 'Default Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_APPISTOL_CLIP_01'),
-                    hex = '0x31C4B22A'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_APPISTOL_CLIP_02',
-                label = 'Extended Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_APPISTOL_CLIP_02'),
-                    hex = '0x249A17D5'
-                }
-            },
-            {
-                type = 'LIGHT',
-                name = 'COMPONENT_AT_PI_FLSH',
-                label = 'Flashlight',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_FLSH'),
-                    hex = '0x359B7AAE'
-                }
-            },
-            {
-                type = 'SUPPRESSOR',
-                name = 'COMPONENT_AT_PI_SUPP',
-                label = 'Suppressor',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_SUPP'),
-                    hex = '0xC304849A'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_APPISTOL_VARMOD_LUXE',
-                label = 'Gilded Gun Metal Finish',
-                hash = {
-                    joaat = joaat('COMPONENT_APPISTOL_VARMOD_LUXE'),
-                    hex = '0x9B76C72C'
-                }
-            },
+            default_clip = 'COMPONENT_APPISTOL_CLIP_01',
+            extended_clip = 'COMPONENT_APPISTOL_CLIP_02',
+            flashlight = 'COMPONENT_AT_PI_FLSH',
+            suppressor = 'COMPONENT_AT_PI_SUPP',
+            gilded_gun_metal_finish = 'COMPONENT_APPISTOL_VARMOD_LUXE'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Stungun (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/3/3c/Stungun-icon.png" width="100px">
+    stungun = {
         name = 'WEAPON_STUNGUN',
-        label = 'Stun Gun',
-        hash = {
-            joaat = joaat('WEAPON_STUNGUN'),
-            hex = '0x3656C8C1'
-        },
-        components = {}
+        label = 'Stungun'
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Pistol .50 (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/c/c5/Pistol.50-icon.png" width="100px">
+    pistol50 = {
         name = 'WEAPON_PISTOL50',
         label = 'Pistol .50',
-        hash = {
-            joaat = joaat('WEAPON_PISTOL50'),
-            hex = '0x99AEEB3B'
-        },
         components = {
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_PISTOL50_CLIP_01',
-                label = 'Default Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL50_CLIP_01'),
-                    hex = '0x2297BE19'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_PISTOL50_CLIP_02',
-                label = 'Extended Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL50_CLIP_02'),
-                    hex = '0xD9D3AC92'
-                }
-            },
-            {
-                type = 'LIGHT',
-                name = 'COMPONENT_AT_PI_FLSH',
-                label = 'Flashlight',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_FLSH'),
-                    hex = '0x359B7AAE'
-                }
-            },
-            {
-                type = 'SUPPRESSOR',
-                name = 'COMPONENT_AT_PI_SUPP',
-                label = 'Suppressor',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_SUPP'),
-                    hex = '0xC304849A'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_PISTOL50_VARMOD_LUXE',
-                label = 'Platinum Pearl Deluxe Finish',
-                hash = {
-                    joaat = joaat('COMPONENT_PISTOL50_VARMOD_LUXE'),
-                    hex = '0x77B8AB2F'
-                }
-            },
+            default_clip = 'COMPONENT_PISTOL50_CLIP_01',
+            extended_clip = 'COMPONENT_PISTOL50_CLIP_02',
+            flashlight = 'COMPONENT_AT_PI_FLSH',
+            suppressor = 'COMPONENT_AT_AR_SUPP_02',
+            platinum_pearl_deluxe_finish = 'COMPONENT_PISTOL50_VARMOD_LUXE'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>SNS Pistol (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/9/96/Sns-pistol-icon.png" width="90px">
+    snspistol = {
         name = 'WEAPON_SNSPISTOL',
         label = 'SNS Pistol',
-        hash = {
-            joaat = joaat('WEAPON_SNSPISTOL'),
-            hex = '0xBFD21232'
-        },
         components = {
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_SNSPISTOL_CLIP_01',
-                label = 'Default Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_CLIP_01'),
-                    hex = '0xF8802ED9'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_SNSPISTOL_CLIP_02',
-                label = 'Extended Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_CLIP_02'),
-                    hex = '0x7B0033B3'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_SNSPISTOL_VARMOD_LOWRIDER',
-                label = 'Etched Wood Grip Finish',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_VARMOD_LOWRIDER'),
-                    hex = '0x8033ECAF'
-                }
-            },
+            default_clip = 'COMPONENT_SNSPISTOL_CLIP_01',
+            extended_clip = 'COMPONENT_SNSPISTOL_CLIP_02',
+            etched_wood_grip_finish = 'COMPONENT_SNSPISTOL_VARMOD_LOWRIDER'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>SNS Pistol MK2 (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/1/16/Sns-pistol-mk2-icon.png" width="90px">
+    snspistol_mk2 = {
         name = 'WEAPON_SNSPISTOL_MK2',
-        label = 'SNS Pistol MKII',
-        hash = {
-            joaat = joaat('WEAPON_SNSPISTOL_MK2'),
-            hex = '0x88374054'
-        },
+        label = 'SNS Pistol MK2',
         components = {
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_SNSPISTOL_MK2_CLIP_01',
-                label = 'Default Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CLIP_01'),
-                    hex = '0x1466CE6'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_SNSPISTOL_MK2_CLIP_02',
-                label = 'Extended Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CLIP_02'),
-                    hex = '0xCE8C0772'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_SNSPISTOL_MK2_CLIP_TRACER',
-                label = 'Tracer Rounds',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CLIP_TRACER'),
-                    hex = '0x902DA26E'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_SNSPISTOL_MK2_CLIP_INCENDIARY',
-                label = 'Incendiary Rounds',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CLIP_INCENDIARY'),
-                    hex = '0xE6AD5F79'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_SNSPISTOL_MK2_CLIP_HOLLOWPOINT',
-                label = 'Hollow Point Rounds',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CLIP_HOLLOWPOINT'),
-                    hex = '0x8D107402'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_SNSPISTOL_MK2_CLIP_FMJ',
-                label = 'Full Metal Jacket Rounds',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CLIP_FMJ'),
-                    hex = '0xC111EB26'
-                }
-            },
-            {
-                type = 'LIGHT',
-                name = 'COMPONENT_AT_PI_FLSH_03',
-                label = 'Flashlight',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_FLSH_03'),
-                    hex = '0x4A4965F3'
-                }
-            },
-            {
-                type = 'SCOPE',
-                name = 'COMPONENT_AT_PI_RAIL_02',
-                label = 'Mounted Scope',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_RAIL_02'),
-                    hex = '0x47DE9258'
-                }
-            },
-            {
-                type = 'SUPPRESSOR',
-                name = 'COMPONENT_AT_PI_SUPP_02',
-                label = 'Suppressor',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_SUPP_02'),
-                    hex = '0x65EA7EBB'
-                }
-            },
-            {
-                type = 'COMPENSATOR',
-                name = 'COMPONENT_AT_PI_COMP_02',
-                label = 'Compensator',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_COMP_02'),
-                    hex = '0xAA8283BF'
-                }
-            },
-            {
-                type = 'COMPENSATOR',
-                name = 'COMPONENT_AT_PI_COMP_02',
-                label = 'Compensator',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_COMP_02'),
-                    hex = '0xAA8283BF'
-                }
-            },
-            {
-                type = 'COMPENSATOR',
-                name = 'COMPONENT_AT_PI_COMP_02',
-                label = 'Compensator',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_COMP_02'),
-                    hex = '0xAA8283BF'
-                }
-            },
-            {
-                type = 'COMPENSATOR',
-                name = 'COMPONENT_AT_PI_COMP_02',
-                label = 'Compensator',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_COMP_02'),
-                    hex = '0xAA8283BF'
-                }
-            },
-            {
-                type = 'COMPENSATOR',
-                name = 'COMPONENT_AT_PI_COMP_02',
-                label = 'Compensator',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_COMP_02'),
-                    hex = '0xAA8283BF'
-                }
-            },
-            {
-                type = 'COMPENSATOR',
-                name = 'COMPONENT_AT_PI_COMP_02',
-                label = 'Compensator',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_COMP_02'),
-                    hex = '0xAA8283BF'
-                }
-            },
-            {
-                type = 'COMPENSATOR',
-                name = 'COMPONENT_AT_PI_COMP_02',
-                label = 'Compensator',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_COMP_02'),
-                    hex = '0xAA8283BF'
-                }
-            },
-            {
-                type = 'COMPENSATOR',
-                name = 'COMPONENT_AT_PI_COMP_02',
-                label = 'Compensator',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_COMP_02'),
-                    hex = '0xAA8283BF'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO'),
-                    hex = '0xF7BEEDD'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_02',
-                label = 'Brushstroke Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_02'),
-                    hex = '0x8A612EF6'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_03',
-                label = 'Woodland Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_03'),
-                    hex = '0x76FA8829'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_04',
-                label = 'Skull',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_04'),
-                    hex = '0xA93C6CAC'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_05',
-                label = 'Sessanta Nove',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_05'),
-                    hex = '0x9C905354'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_06',
-                label = 'Perseus',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_06'),
-                    hex = '0x4DFA3621'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_07',
-                label = 'Leopard',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_07'),
-                    hex = '0x42E91FFF'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_08',
-                label = 'Zebra',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_08'),
-                    hex = '0x54A8437D'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_09',
-                label = 'Geometric',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_09'),
-                    hex = '0x68C2746'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_10',
-                label = 'Boom!',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_10'),
-                    hex = '0x2366E467'
-                }
-            },
-            {
-                type = 'CAMO_IND',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_IND_01',
-                label = 'Boom!',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_IND_01'),
-                    hex = '0x441882E6'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_SLIDE',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_SLIDE'),
-                    hex = '0xE7EE68EA'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_02_SLIDE',
-                label = 'Brushstroke Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_02_SLIDE'),
-                    hex = '0x29366D21'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_03_SLIDE',
-                label = 'Woodland Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_03_SLIDE'),
-                    hex = '0x3ADE514B'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_04_SLIDE',
-                label = 'Skull',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_04_SLIDE'),
-                    hex = '0xE64513E9'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_05_SLIDE',
-                label = 'Sessanta Nove',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_05_SLIDE'),
-                    hex = '0xCD7AEB9A'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_06_SLIDE',
-                label = 'Perseus',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_06_SLIDE'),
-                    hex = '0xFA7B27A6'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_07_SLIDE',
-                label = 'Leopard',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_07_SLIDE'),
-                    hex = '0xE285CA9A'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_08_SLIDE',
-                label = 'Zebra',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_08_SLIDE'),
-                    hex = '0x2B904B19'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_09_SLIDE',
-                label = 'Geometric',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_09_SLIDE'),
-                    hex = '0x22C24F9C'
-                }
-            },
-            {
-                type = 'CAMO_SLIDE',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_10_SLIDE',
-                label = 'Boom!',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_10_SLIDE'),
-                    hex = '0x8D0D5ECD'
-                }
-            },
-            {
-                type = 'CAMO_IND_SLIDE',
-                name = 'COMPONENT_SNSPISTOL_MK2_CAMO_IND_01_SLIDE',
-                label = 'Patriotic',
-                hash = {
-                    joaat = joaat('COMPONENT_SNSPISTOL_MK2_CAMO_IND_01_SLIDE'),
-                    hex = '0xD951E867'
-                }
-            },
+            default_clip = 'COMPONENT_SNSPISTOL_MK2_CLIP_01',
+            extended_clip = 'COMPONENT_SNSPISTOL_MK2_CLIP_02',
+            tracer_rounds = 'COMPONENT_SNSPISTOL_MK2_CLIP_TRACER',
+            incendiary_rounds = 'COMPONENT_SNSPISTOL_MK2_CLIP_INCENDIARY',
+            hollow_point_rounds = 'COMPONENT_SNSPISTOL_MK2_CLIP_HOLLOWPOINT',
+            full_metal_jacket_rounds = 'COMPONENT_SNSPISTOL_MK2_CLIP_FMJ',
+            flashlight = 'COMPONENT_AT_PI_FLSH_03',
+            mounted_scope = 'COMPONENT_AT_PI_RAIL_02', 
+            suppressor = 'COMPONENT_AT_PI_SUPP_02', 
+            compensator = 'COMPONENT_AT_PI_COMP_02',
+            digital_camo = 'COMPONENT_SNSPISTOL_MK2_CAMO',
+            brushstroke_camo = 'COMPONENT_SNSPISTOL_MK2_CAMO_02',
+            woodland_camo = 'COMPONENT_SNSPISTOL_MK2_CAMO_03',
+            skull_camo = 'COMPONENT_SNSPISTOL_MK2_CAMO_04',
+            sessanta_nove_camo = 'COMPONENT_SNSPISTOL_MK2_CAMO_05',
+            perseus_camo = 'COMPONENT_SNSPISTOL_MK2_CAMO_06',
+            leopard_camo = 'COMPONENT_SNSPISTOL_MK2_CAMO_07',
+            zebra_camo = 'COMPONENT_SNSPISTOL_MK2_CAMO_08',
+            geometric_camo = 'COMPONENT_SNSPISTOL_MK2_CAMO_09',
+            boom_camo = 'COMPONENT_SNSPISTOL_MK2_CAMO_10',
+            boom_ind = 'COMPONENT_SNSPISTOL_MK2_CAMO_IND_01',
+            digital_camo = 'COMPONENT_SNSPISTOL_MK2_CAMO_SLIDE',
+            brushstroke_camo = 'COMPONENT_SNSPISTOL_MK2_CAMO_02_SLIDE',
+            woodland_camo = 'COMPONENT_SNSPISTOL_MK2_CAMO_03_SLIDE',
+            skull_slide = 'COMPONENT_SNSPISTOL_MK2_CAMO_04_SLIDE',
+            sessanta_nove_slide = 'COMPONENT_SNSPISTOL_MK2_CAMO_05_SLIDE',
+            perseus_slide = 'COMPONENT_SNSPISTOL_MK2_CAMO_06_SLIDE',
+            leopard_slide = 'COMPONENT_SNSPISTOL_MK2_CAMO_07_SLIDE',
+            zebra_slide = 'COMPONENT_SNSPISTOL_MK2_CAMO_08_SLIDE',
+            geometric_slide = 'COMPONENT_SNSPISTOL_MK2_CAMO_09_SLIDE',
+            boom_slide = 'COMPONENT_SNSPISTOL_MK2_CAMO_10_SLIDE',
+            patriotic_ind_slide = 'COMPONENT_SNSPISTOL_MK2_CAMO_IND_01_SLIDE'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Heavy Pistol (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/7/78/Heavy-pistol-icon.png" width="100px">
+    heavypistol = {
         name = 'WEAPON_HEAVYPISTOL',
         label = 'Heavy Pistol',
-        hash = {
-            joaat = joaat('WEAPON_HEAVYPISTOL'),
-            hex = '0xD205520E'
-        },
         components = {
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_HEAVYPISTOL_CLIP_01',
-                label = 'Default Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_HEAVYPISTOL_CLIP_01'),
-                    hex = '0xD4A969A'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_HEAVYPISTOL_CLIP_02',
-                label = 'Extended Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_HEAVYPISTOL_CLIP_02'),
-                    hex = '0x64F9C62B'
-                }
-            },
-            {
-                type = 'LIGHT',
-                name = 'COMPONENT_AT_PI_FLSH',
-                label = 'Flashlight',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_FLSH'),
-                    hex = '0x359B7AAE'
-                }
-            },
-            {
-                type = 'SUPPRESSOR',
-                name = 'COMPONENT_AT_PI_SUPP',
-                label = 'Suppressor',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_SUPP'),
-                    hex = '0xC304849A'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_HEAVYPISTOL_VARMOD_LUXE',
-                label = 'Etched Wood Grip Finish',
-                hash = {
-                    joaat = joaat('COMPONENT_HEAVYPISTOL_VARMOD_LUXE'),
-                    hex = '0x7A6A7B7B'
-                }
-            },
+            default_clip = 'COMPONENT_HEAVYPISTOL_CLIP_01',
+            extended_clip = 'COMPONENT_HEAVYPISTOL_CLIP_02',
+            flashlight = 'COMPONENT_AT_PI_FLSH',
+            suppressor = 'COMPONENT_AT_PI_SUPP',
+            etched_wood_grip_finish = 'COMPONENT_HEAVYPISTOL_VARMOD_LUXE'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Vintage Pistol (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/9/97/Vintage-pistol-icon.png" width="100px">
+    vintagepistol = {
         name = 'WEAPON_VINTAGEPISTOL',
         label = 'Vintage Pistol',
-        hash = {
-            joaat = joaat('WEAPON_VINTAGEPISTOL'),
-            hex = '0x83839C4'
-        },
         components = {
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_VINTAGEPISTOL_CLIP_01',
-                label = 'Default Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_VINTAGEPISTOL_CLIP_01'),
-                    hex = '0x45A3B6BB'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_VINTAGEPISTOL_CLIP_02',
-                label = 'Extended Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_VINTAGEPISTOL_CLIP_02'),
-                    hex = '0x33BA12E8'
-                }
-            },
-            {
-                type = 'SUPPRESSOR',
-                name = 'COMPONENT_AT_PI_SUPP',
-                label = 'Suppressor',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_SUPP'),
-                    hex = '0xC304849A'
-                }
-            },
+            default_clip = 'COMPONENT_VINTAGEPISTOL_CLIP_01',
+            extended_clip = 'COMPONENT_VINTAGEPISTOL_CLIP_02',
+            suppressor = 'COMPONENT_AT_PI_SUPP'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Flaregun (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/0/0d/Flaregun-icon.png" width="100px">
+    flaregun = {
         name = 'WEAPON_FLAREGUN',
-        label = 'Flare Gun',
-        hash = {
-            joaat = joaat('WEAPON_VINTAGEPISTOL'),
-            hex = '0x47757124'
-        },
-        components = {}
+        label = 'Flaregun'
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Marksman Pistol (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/4/47/Marksman-pistol-icon.png/164px-Marksman-pistol-icon.png" width="110px">
+    marksmanpistol = {
         name = 'WEAPON_MARKSMANPISTOL',
-        label = 'Marksman Pistol',
-        hash = {
-            joaat = joaat('WEAPON_MARKSMANPISTOL'),
-            hex = '0xDC4DB296'
-        },
-        components = {}
+        label = 'Marksman Pistol'
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Heavy Revolver (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/9/93/Heavy-revolver-icon.png/164px-Heavy-revolver-icon.png" width="110px">
+    revolver = {
         name = 'WEAPON_REVOLVER',
         label = 'Heavy Revolver',
-        hash = {
-            joaat = joaat('WEAPON_HEAVYREVOLVER'),
-            hex = '0xC1B3C3D1'
-        },
         components = {
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_REVOLVER_VARMOD_BOSS',
-                label = 'VIP Variant',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_VARMOD_BOSS'),
-                    hex = '0x16EE3040'
-                }
-            },
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_REVOLVER_VARMOD_GOON',
-                label = 'Bodyguard Variant',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_VARMOD_GOON'),
-                    hex = '0x9493B80D'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_REVOLVER_CLIP_01',
-                label = 'Default Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_CLIP_01'),
-                    hex = '0xE9867CE3'
-                }
-            },
+            vip = 'COMPONENT_REVOLVER_VARMOD_BOSS',
+            bodyguard = 'COMPONENT_REVOLVER_VARMOD_GOON',
+            default_clip = 'COMPONENT_REVOLVER_CLIP_01'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Heavy Revolver MK2 (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/c/c0/Heavy-revolver-mk2-icon.png/164px-Heavy-revolver-mk2-icon.png" width="110px">
+    revolver_mk2 = {
         name = 'WEAPON_REVOLVER_MK2',
-        label = 'Heavy Revolver MKII',
-        hash = {
-            joaat = joaat('WEAPON_HEAVYREVOLVER_MK2'),
-            hex = '0xCB96392F'
-        },
+        label = 'Heavy Revolver MK2',
         components = {
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_REVOLVER_MK2_CLIP_01',
-                label = 'Default Rounds',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CLIP_01'),
-                    hex = '0xBA23D8BE'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_REVOLVER_MK2_CLIP_TRACER',
-                label = 'Tracer Rounds',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CLIP_TRACER'),
-                    hex = '0xC6D8E476'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_REVOLVER_MK2_CLIP_INCENDIARY',
-                label = 'Incendiary Rounds',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CLIP_INCENDIARY'),
-                    hex = '0xEFBF25'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_REVOLVER_MK2_CLIP_HOLLOWPOINT',
-                label = 'Hollow Point Rounds',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CLIP_HOLLOWPOINT'),
-                    hex = '0x10F42E8F'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_REVOLVER_MK2_CLIP_FMJ',
-                label = 'Full Metal Jacket Rounds',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CLIP_FMJ'),
-                    hex = '0xDC8BA3F'
-                }
-            },
-            {
-                type = 'SIGHT',
-                name = 'COMPONENT_AT_SIGHTS',
-                label = 'Holographic Sight',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_SIGHTS'),
-                    hex = '0x420FD713'
-                }
-            },
-            {
-                type = 'SCOPE',
-                name = 'COMPONENT_AT_SCOPE_MACRO_MK2',
-                label = 'Small Scope',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_SCOPE_MACRO_MK2'),
-                    hex = '0x49B2945'
-                }
-            },
-            {
-                type = 'LIGHT',
-                name = 'COMPONENT_AT_PI_FLSH',
-                label = 'Flashlight',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_FLSH'),
-                    hex = '0x359B7AAE'
-                }
-            },
-            {
-                type = 'COMPENSATOR',
-                name = 'COMPONENT_AT_PI_COMP_03',
-                label = 'Compensator',
-                hash = {
-                    joaat = joaat('COMPONENT_AT_PI_COMP_03'),
-                    hex = '0x27077CCB'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_REVOLVER_MK2_CAMO',
-                label = 'Digital Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CAMO'),
-                    hex = '0xC03FED9F'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_REVOLVER_MK2_CAMO_02',
-                label = 'Brushstroke Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CAMO_02'),
-                    hex = '0xB5DE24'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_REVOLVER_MK2_CAMO_03',
-                label = 'Woodland Camo',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CAMO_03'),
-                    hex = '0xA7FF1B8'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_REVOLVER_MK2_CAMO_04',
-                label = 'Skull',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CAMO_04'),
-                    hex = '0xF2E24289'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_REVOLVER_MK2_CAMO_05',
-                label = 'Sessanta Nove',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CAMO_05'),
-                    hex = '0x11317F27'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_REVOLVER_MK2_CAMO_06',
-                label = 'Perseus',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CAMO_06'),
-                    hex = '0x17C30C42'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_REVOLVER_MK2_CAMO_07',
-                label = 'Leopard',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CAMO_07'),
-                    hex = '0x257927AE'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_REVOLVER_MK2_CAMO_08',
-                label = 'Zebra',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CAMO_08'),
-                    hex = '0x37304B1C'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_REVOLVER_MK2_CAMO_09',
-                label = 'Geometric',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CAMO_09'),
-                    hex = '0x48DAEE71'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_REVOLVER_MK2_CAMO_10',
-                label = 'Boom!',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CAMO_10'),
-                    hex = '0x20ED9B5B'
-                }
-            },
-            {
-                type = 'CAMO',
-                name = 'COMPONENT_REVOLVER_MK2_CAMO_IND_01',
-                label = 'Patriotic',
-                hash = {
-                    joaat = joaat('COMPONENT_REVOLVER_MK2_CAMO_IND_01'),
-                    hex = '0xD951E867'
-                }
-            },
+            default_roudns = 'COMPONENT_REVOLVER_MK2_CLIP_01',
+            tracer_rounds = 'COMPONENT_REVOLVER_MK2_CLIP_TRACER',
+            incendiary_rounds = 'COMPONENT_REVOLVER_MK2_CLIP_INCENDIARY',
+            hollow_point_rounds = 'COMPONENT_REVOLVER_MK2_CLIP_HOLLOWPOINT',
+            fmj_rounds = 'COMPONENT_REVOLVER_MK2_CLIP_FMJ',
+            holographic_sight = 'COMPONENT_AT_SIGHTS',
+            small_scope = 'COMPONENT_AT_SCOPE_MACRO_MK2',
+            flashlight = 'COMPONENT_AT_PI_FLSH',
+            compensator = 'COMPONENT_AT_PI_COMP_03',
+            digital_camo = 'COMPONENT_REVOLVER_MK2_CAMO',
+            brushstroke_camo = 'COMPONENT_REVOLVER_MK2_CAMO_02',
+            woodland_camo = 'COMPONENT_REVOLVER_MK2_CAMO_03',	
+            skull = 'COMPONENT_REVOLVER_MK2_CAMO_04',
+            sessanta_nove = 'COMPONENT_REVOLVER_MK2_CAMO_05',
+            perseus = 'COMPONENT_REVOLVER_MK2_CAMO_06',
+            leopard = 'COMPONENT_REVOLVER_MK2_CAMO_07',
+            zebra = 'COMPONENT_REVOLVER_MK2_CAMO_08',
+            geometric = 'COMPONENT_REVOLVER_MK2_CAMO_09',
+            boom = 'COMPONENT_REVOLVER_MK2_CAMO_10',
+            patriotic = 'COMPONENT_REVOLVER_MK2_CAMO_IND_01'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Double Action Revolver (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/4/45/Double-action-revolver-icon.png/164px-Double-action-revolver-icon.png" width="110px">
+    doubleaction = {
         name = 'WEAPON_DOUBLEACTION',
-        label = 'Double Action Revolver',
-        hash = {
-            joaat = joaat('WEAPON_DOUBLEACTION'),
-            hex = '0x97EA20B8'
-        },
-        components = {}
+        label = 'Double Action Revolver'
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Up-n-Atomizer (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/8/89/Up-n-atomizer-icon.png/164px-Up-n-atomizer-icon.png" width="110px">
+    raypistol = {
         name = 'WEAPON_RAYPISTOL',
         label = 'Up-n-Atomizer',
-        hash = {
-            joaat = joaat('WEAPON_RAYPISTOL'),
-            hex = '0xAF3696A1'
-        },
         components = {
-            {
-                type = 'VARIANT',
-                name = 'COMPONENT_RAYPISTOL_VARMOD_XMAS18',
-                label = 'Festive tint',
-                hash = {
-                    joaat = joaat('COMPONENT_RAYPISTOL_VARMOD_XMAS18'),
-                    hex = '0xD7DBF707'
-                }
-            },
+            festive_tint = 'COMPONENT_RAYPISTOL_VARMOD_XMAS18'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Ceramic Pistol (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/a/ad/Ceramic-pistol-icon.png" width="100px">
+    ceramicpistol = {
         name = 'WEAPON_CERAMICPISTOL',
         label = 'Ceramic Pistol',
-        hash = {
-            joaat = joaat('WEAPON_CERAMICPISTOL'),
-            hex = '0x2B5EF5EC'
-        },
         components = {
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_CERAMICPISTOL_CLIP_01',
-                label = 'Default Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_CERAMICPISTOL_CLIP_01'),
-                    hex = '0x54D41361'
-                }
-            },
-            {
-                type = 'CLIP',
-                name = 'COMPONENT_CERAMICPISTOL_CLIP_02',
-                label = 'Extended Clip',
-                hash = {
-                    joaat = joaat('COMPONENT_CERAMICPISTOL_CLIP_02'),
-                    hex = '0x81786CA9'
-                }
-            },
-            {
-                type = 'SUPPRESSOR',
-                name = 'COMPONENT_CERAMICPISTOL_SUPP',
-                label = 'Suppressor',
-                hash = {
-                    joaat = joaat('COMPONENT_CERAMICPISTOL_SUPP'),
-                    hex = '0x9307D6FA'
-                }
-            },
+            default_clip = 'COMPONENT_CERAMICPISTOL_CLIP_01',
+            extended_clip = 'COMPONENT_CERAMICPISTOL_CLIP_02',
+            suppressor = 'COMPONENT_CERAMICPISTOL_SUPP'
         }
     },
-    {
-        type = 'HANDGUNS',
+    ---<h4>Navy Revolver (Handguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/1/15/Navy-revolver-icon.png/164px-Navy-revolver-icon.png" width="120px">
+    navyrevolver = {
         name = 'WEAPON_NAVYREVOLVER',
-        label = 'Navy Revolver',
-        hash = {
-            joaat = joaat('WEAPON_NAVYREVOLVER'),
-            hex = '0x917F6C8C'
-        },
-        components = {}
+        label = 'Navy Revolver'
     },
-    {
-        type = 'HANDGUNS',
-        name = 'WEAPON_GAGDETPISTOL',
-        label = 'Perico Pistol',
-        hash = {
-            joaat = joaat('WEAPON_GAGDETPISTOL'),
-            hex = '0x57A4368C'
-        },
-        components = {}
+    -- Submachine Guns
+
+    ---<h4>Micro SMG (Submanchine Guns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/3/3a/Micro-smg-icon.png/164px-Micro-smg-icon.png" width="100px">
+    microsmg = {
+        name = 'WEAPON_MICROSMG',
+        label = 'Micro SMG',
+        components = {
+            default_clip = 'COMPONENT_MICROSMG_CLIP_01',
+            extended_clip = 'COMPONENT_MICROSMG_CLIP_02',
+            flashlight = 'COMPONENT_AT_PI_FLSH',
+            scope = 'COMPONENT_AT_SCOPE_MACRO',
+            suppressor = 'COMPONENT_AT_AR_SUPP_02',
+            yusuf_amir_luxury_finish = 'COMPONENT_MICROSMG_VARMOD_LUXE'
+        }
     },
-    {
-        type = 'HANDGUNS',
-        name = 'WEAPON_STUNGUN_MP',
-        label = 'Stun Gun',
-        hash = {
-            joaat = joaat('WEAPON_STUNGUN_MP'),
-            hex = '0x45CD9CF3'
-        },
-        components = {}
+    ---<h4>SMG (Submanchine Guns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/3/30/Smg-icon.png/164px-Smg-icon.png" width="150px">
+    smg = {
+        name = 'WEAPON_SMG',
+        label = 'SMG',
+        components = {
+            default_clip = 'COMPONENT_SMG_CLIP_01',
+            extended_clip = 'COMPONENT_SMG_CLIP_02',
+            drum_magazine = 'COMPONENT_SMG_CLIP_03',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            scope = 'COMPONENT_AT_SCOPE_MACRO_02',
+            suppressor = 'COMPONENT_AT_PI_SUPP',
+            yusuf_amir_luxury_finish = 'COMPONENT_SMG_VARMOD_LUXE'
+        }
     },
-    {
-        type = 'HANDGUNS',
-        name = 'WEAPON_PISTOLXM3',
-        label = 'WM 29 Pistol',
-        hash = {
-            joaat = joaat('WEAPON_PISTOLXM3'),
-            hex = '0x1BC4FDB9'
-        },
-        components = {}
+    ---<h4>SMG MK2 (Submanchine Guns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/d/d1/Smg-mk2-icon.png/164px-Smg-mk2-icon.png" width="100px">
+    smg_mk2 = {
+        name = 'WEAPON_SMG_MK2',
+        label = 'SMG MK2',
+        components = {
+            default_clip = 'COMPONENT_SMG_MK2_CLIP_01',
+            extended_clip = 'COMPONENT_SMG_MK2_CLIP_02',
+            tracer_rounds = 'COMPONENT_SMG_MK2_CLIP_TRACER',
+            incendiary_rounds = 'COMPONENT_SMG_MK2_CLIP_INCENDIARY',
+            hollow_point_rounds = 'COMPONENT_SMG_MK2_CLIP_HOLLOWPOINT',
+            full_metal_jacket_rounds = 'COMPONENT_SMG_MK2_CLIP_FMJ',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            holographic_sight = 'COMPONENT_AT_SIGHTS_SMG',
+            small_scope = 'COMPONENT_AT_SCOPE_MACRO_02_SMG_MK2',
+            medium_scope = 'COMPONENT_AT_SCOPE_SMALL_SMG_MK2',
+            suppressor = 'COMPONENT_AT_PI_SUPP',
+            flat_muzzle_brake = 'COMPONENT_AT_MUZZLE_01',
+            tactical_muzzle_brake = 'COMPONENT_AT_MUZZLE_02',
+            fat_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_03',
+            precision_muzzle_brake = 'COMPONENT_AT_MUZZLE_04',
+            heavy_duty_muzzle_brake = 'COMPONENT_AT_MUZZLE_05',
+            slanted_muzzle_brake = 'COMPONENT_AT_MUZZLE_06',
+            split_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_07',
+            default_barrel = 'COMPONENT_AT_SB_BARREL_01',
+            heavy_barrel = 'COMPONENT_AT_SB_BARREL_02',
+            digital_camo = 'COMPONENT_SMG_MK2_CAMO',
+            brushstroke_camo = 'COMPONENT_SMG_MK2_CAMO_02',
+            woodland_camo = 'COMPONENT_SMG_MK2_CAMO_03',
+            skull = 'COMPONENT_SMG_MK2_CAMO_04',
+            sessanta_nove = 'COMPONENT_SMG_MK2_CAMO_05',
+            perseus = 'COMPONENT_SMG_MK2_CAMO_06',
+            leopard = 'COMPONENT_SMG_MK2_CAMO_07',
+            zebra = 'COMPONENT_SMG_MK2_CAMO_08',
+            geometric = 'COMPONENT_SMG_MK2_CAMO_09',
+            boom = 'COMPONENT_SMG_MK2_CAMO_10',
+            patriotic = 'COMPONENT_SMG_MK2_CAMO_IND_01'
+        }
     },
+    ---<h4>Assault SMG (Submanchine Guns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/3/30/Assault-smg-icon.png/164px-Assault-smg-icon.png" width="150px">
+    assaultsmg = {
+        name = 'WEAPON_ASSAULTSMG',
+        label = 'Assault SMG',
+        components = {
+            default_clip = 'COMPONENT_ASSAULTSMG_CLIP_01',
+            extended_clip = 'COMPONENT_ASSAULTSMG_CLIP_02',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            scope = 'COMPONENT_AT_SCOPE_MACRO',
+            suppressor = 'COMPONENT_AT_AR_SUPP_02',
+            yusuf_amir_luxury_finish = 'COMPONENT_ASSAULTSMG_VARMOD_LOWRIDER'
+        }
+    },
+    ---<h4>Combat PDW (Submanchine Guns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/4/45/Combat-pdw-icon.png/164px-Combat-pdw-icon.png" width="150px">
+    combatpdw = {
+        name = 'WEAPON_COMBATPDW',
+        label = 'Combat PDW',
+        components = {
+            default_clip = 'COMPONENT_COMBATPDW_CLIP_01',
+            extended_clip = 'COMPONENT_COMBATPDW_CLIP_02',
+            drum_magazine = 'COMPONENT_COMBATPDW_CLIP_03',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            grip = 'COMPONENT_AT_AR_AFGRIP',
+            scope = 'COMPONENT_AT_SCOPE_SMALL'
+        }
+    },
+    ---<h4>Machine Pistol (Submanchine Guns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/2/24/Machine-pistol-icon.png/164px-Machine-pistol-icon.png" width="100px">
+    machinepistol = {
+        name = 'WEAPON_MACHINEPISTOL',
+        label = 'Machine Pistol',
+        components = {
+            default_clip = 'COMPONENT_MACHINEPISTOL_CLIP_01',
+            extended_clip = 'COMPONENT_MACHINEPISTOL_CLIP_02',
+            drum_magazine = 'COMPONENT_MACHINEPISTOL_CLIP_03',
+            suppressor = 'COMPONENT_AT_PI_SUPP'
+        }
+    },
+    ---<h4>Mini SMG (Submanchine Guns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/d/d3/Mini-smg-icon.png/164px-Mini-smg-icon.png" width="100px">
+    minismg = {
+        name = 'WEAPON_MINISMG',
+        label = 'Mini SMG',
+        components = {
+            default_clip = 'COMPONENT_MINISMG_CLIP_01',
+            extended_clip = 'COMPONENT_MINISMG_CLIP_02'
+        }
+    },
+    ---<h4>Unholy Hellbringer (Submanchine Guns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/8/8f/Unholy-hellbringer-icon.png/164px-Unholy-hellbringer-icon.png" width="150px">
+    raycarbine = {
+        name = 'WEAPON_RAYCARBINE',
+        label = 'Unholy Heelbringer'
+    },
+    ---<h4>Tactical SMG (Submanchine Guns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/b/bc/Tactical-smg-icon.png" width="100px">
+    tecpistol = {
+        name = 'WEAPON_TECPISTOL',
+        label = 'Tactical SMG'
+    },
+    -- Shotguns
+
+    ---<h4>Pump Shotgun (Shotguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/0/09/Pump-shotgun-icon.png/164px-Pump-shotgun-icon.png" width="150px">
+    pumpshotgun = {
+        name = 'WEAPON_PUMPSHOTGUN',
+        label = 'Pump Shotgun',
+        components = {
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            suppressor = 'COMPONENT_AT_SR_SUPP',
+            yusuf_amir_luxury_finish = 'COMPONENT_PUMPSHOTGUN_VARMOD_LOWRIDER'
+        }
+    },
+    ---<h4>Pump Shotgun MK2 (Shotguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/6/69/Pump-shotgun-mk2-icon.png/164px-Pump-shotgun-mk2-icon.png" width="150px">
+    pumpshotgun_mk2 = {
+        name = 'WEAPON_PUMPSHOTGUN_MK2',
+        label = 'Pump Shotgun MK2',
+        components = {
+            default_shells = 'COMPONENT_PUMPSHOTGUN_MK2_CLIP_01',
+            dragons_breath_shells = 'COMPONENT_PUMPSHOTGUN_MK2_CLIP_INCENDIARY',
+            steel_buckshot_shells = 'COMPONENT_PUMPSHOTGUN_MK2_CLIP_ARMORPIERCING',
+            flechette_shells = 'COMPONENT_PUMPSHOTGUN_MK2_CLIP_HOLLOWPOINT',
+            explosive_slugs = 'COMPONENT_PUMPSHOTGUN_MK2_CLIP_EXPLOSIVE',
+            holographic_sight = 'COMPONENT_AT_SIGHTS',
+            small_scope = 'COMPONENT_AT_SCOPE_MACRO_MK2',
+            medium_scope = 'COMPONENT_AT_SCOPE_SMALL_MK2',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            suppressor = 'COMPONENT_AT_SR_SUPP_03',
+            squared_muzzle_brake = 'COMPONENT_AT_MUZZLE_08',
+            digital_camo = 'COMPONENT_PUMPSHOTGUN_MK2_CAMO',
+            brushstroke_camo = 'COMPONENT_PUMPSHOTGUN_MK2_CAMO_02',
+            woodland_camo = 'COMPONENT_PUMPSHOTGUN_MK2_CAMO_03',
+            skull = 'COMPONENT_PUMPSHOTGUN_MK2_CAMO_04',
+            sessanta_nove = 'COMPONENT_PUMPSHOTGUN_MK2_CAMO_05',
+            perseus = 'COMPONENT_PUMPSHOTGUN_MK2_CAMO_06',
+            leopard = 'COMPONENT_PUMPSHOTGUN_MK2_CAMO_07',
+            zebra = 'COMPONENT_PUMPSHOTGUN_MK2_CAMO_08',
+            geometric = 'COMPONENT_PUMPSHOTGUN_MK2_CAMO_09',
+            boom = 'COMPONENT_PUMPSHOTGUN_MK2_CAMO_10',
+            patriotic = 'COMPONENT_PUMPSHOTGUN_MK2_CAMO_IND_01'
+        }
+    },
+    ---<h4>Sawed-Off Shotgun (Shotguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/b/ba/Sawed-off-shotgun-icon.png/164px-Sawed-off-shotgun-icon.png" width="120px">
+    sawnoffshotgun = {
+        name = 'WEAPON_SAWNOFFSHOTGUN',
+        label = 'Sawed-Off Shotgun',
+        components = {
+            gilded_gun_metal_finish = 'COMPONENT_SAWNOFFSHOTGUN_VARMOD_LUXE'
+        }
+    },
+    ---<h4>Assault Shotgun (Shotguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/e/e3/Assault-shotgun-icon.png/164px-Assault-shotgun-icon.png" width="150px">
+    assaultshotgun = {
+        name = 'WEAPON_ASSAULTSHOTGUN',
+        label = 'Assault Shotgun',
+        components = {
+            default_clip = 'COMPONENT_ASSAULTSHOTGUN_CLIP_01',
+            extended_clip = 'COMPONENT_ASSAULTSHOTGUN_CLIP_02',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            suppressor = 'COMPONENT_AT_AR_SUPP',
+            grip = 'COMPONENT_AT_AR_AFGRIP'
+        }
+    },
+    ---<h4>Bullpup Shotgun (Shotguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/7/7f/Bullpup-shotgun-icon.png/164px-Bullpup-shotgun-icon.png" width="150px">
+    bullpupshotgun = {
+        name = 'WEAPON_BULLUPSHOTGUN',
+        label = 'Bullpup Shotgun',
+        components = {
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            suppressor = 'COMPONENT_AT_AR_SUPP_02',
+            grip = 'COMPONENT_AT_AR_AFGRIP'
+        }
+    },
+    ---<h4>Musket (Shotguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/8/8c/Musket-icon.png/164px-Musket-icon.png" width="150px">
+    musket = {
+        name = 'WEAPON_MUSKET'
+    },
+    ---<h4>Heavy Shotgun (Shotguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/5/5d/Heavy-shotgun-icon.png/164px-Heavy-shotgun-icon.png" width="150px">
+    heavyshotgun = {
+        name = 'WEAPON_HEAVYSHOTGUN',
+        label = 'Heavy Shotgun',
+        components = {
+            default_clip = 'COMPONENT_HEAVYSHOTGUN_CLIP_01',
+            extended_clip = 'COMPONENT_HEAVYSHOTGUN_CLIP_02',
+            drum_magazine = 'COMPONENT_HEAVYSHOTGUN_CLIP_03',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            suppressor = 'COMPONENT_AT_AR_SUPP_02',
+            grip = 'COMPONENT_AT_AR_AFGRIP'
+        }
+    },
+    ---<h4>Double Barrel Shotgun (Shotguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/8/8d/Double-barrel-shotgun-icon.png/164px-Double-barrel-shotgun-icon.png" width="100px">
+    dbshotgun = {
+        name = 'WEAPON_DBSHOTGUN',
+        label = 'Double Barrel Shotgun'
+    },
+    ---<h4>Sweeper Shotgun (Shotguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/a/a8/Sweeper-shotgun-icon.png/164px-Sweeper-shotgun-icon.png" width="100px">
+    autoshotgun = {
+        name = 'WEAPON_AUTOSHOTGUN',
+        label = 'Sweeper Shotgun'
+    },
+    ---<h4>Combat Shotgun (Shotguns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/5/50/Combat-shotgun-icon.png/164px-Combat-shotgun-icon.png" width="150px">
+    combatshotgun = {
+        name = 'WEAPON_COMBATSHOTGUN',
+        label = 'Combat Shotgun',
+        components = {
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            suppressor = 'COMPONENT_AT_AR_SUPP'
+        }
+    },
+    -- Assault Rifles
+
+    ---<h4>Assault Rifle (Assault Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/6/61/Assault-rifle-icon.png/164px-Assault-rifle-icon.png" width="150px">
+    assaultrifle = {
+        name = 'WEAPON_ASSAULTRIFLE',
+        label = 'Assault Rifle',
+        components = {
+            default_clip = 'COMPONENT_ASSAULTRIFLE_CLIP_01',
+            extended_clip = 'COMPONENT_ASSAULTRIFLE_CLIP_02',
+            drum_magazine = 'COMPONENT_ASSAULTRIFLE_CLIP_03',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            scope = 'COMPONENT_AT_SCOPE_MACRO',
+            suppressor = 'COMPONENT_AT_AR_SUPP_02',
+            grip = 'COMPONENT_AT_AR_AFGRIP',
+            yusuf_amir_luxury_finish = 'COMPONENT_ASSAULTRIFLE_VARMOD_LUXE'
+        }
+    },
+    ---<h4>Assault Rifle MK2 (Assault Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/6/63/Assault-rifle-mk2-icon.png/164px-Assault-rifle-mk2-icon.png" width="150px">
+    assaultrifle_mk2 = {
+        name = 'WEAPON_ASSAULTRIFLE_MK2',
+        label = 'Assault Rifle MK2',
+        components = {
+            default_clip = 'COMPONENT_ASSAULTRIFLE_MK2_CLIP_01',
+            extended_clip = 'COMPONENT_ASSAULTRIFLE_MK2_CLIP_02',
+            tracer_rounds = 'COMPONENT_ASSAULTRIFLE_MK2_CLIP_TRACER',
+            incendiary_rounds = 'COMPONENT_ASSAULTRIFLE_MK2_CLIP_INCENDIARY',
+            armor_piercing_rounds = 'COMPONENT_ASSAULTRIFLE_MK2_CLIP_ARMORPIERCING',
+            full_metal_jacket_rounds = 'COMPONENT_ASSAULTRIFLE_MK2_CLIP_FMJ',
+            grip = 'COMPONENT_AT_AR_AFGRIP_02',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            holographic_sight = 'COMPONENT_AT_SIGHTS',
+            small_scope = 'COMPONENT_AT_SCOPE_MACRO_MK2',
+            large_scope = 'COMPONENT_AT_SCOPE_MEDIUM_MK2',
+            suppressor = 'COMPONENT_AT_AR_SUPP_02',
+            flat_muzzle_brake = 'COMPONENT_AT_MUZZLE_01',
+            tactical_muzzle_brake = 'COMPONENT_AT_MUZZLE_02',
+            fat_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_03',
+            precision_muzzle_brake = 'COMPONENT_AT_MUZZLE_04',
+            heavy_duty_muzzle_brake = 'COMPONENT_AT_MUZZLE_05',
+            slanted_muzzle_brake = 'COMPONENT_AT_MUZZLE_06',
+            split_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_07',
+            default_barrel = 'COMPONENT_AT_AR_BARREL_01',
+            heavy_barrel = 'COMPONENT_AT_AR_BARREL_02',
+            digital_camo = 'COMPONENT_ASSAULTRIFLE_MK2_CAMO',
+            brushstroke_camo = 'COMPONENT_ASSAULTRIFLE_MK2_CAMO_02',
+            woodland_camo = 'COMPONENT_ASSAULTRIFLE_MK2_CAMO_03',
+            skull = 'COMPONENT_ASSAULTRIFLE_MK2_CAMO_04',
+            sessanta_nove = 'COMPONENT_ASSAULTRIFLE_MK2_CAMO_05',
+            perseus = 'COMPONENT_ASSAULTRIFLE_MK2_CAMO_06',
+            leopard = 'COMPONENT_ASSAULTRIFLE_MK2_CAMO_07',
+            zebra = 'COMPONENT_ASSAULTRIFLE_MK2_CAMO_08',
+            geometric = 'COMPONENT_ASSAULTRIFLE_MK2_CAMO_09',
+            boom = 'COMPONENT_ASSAULTRIFLE_MK2_CAMO_10',
+            patriotic = 'COMPONENT_ASSAULTRIFLE_MK2_CAMO_IND_01'
+        }
+    },
+    ---<h4>Carbine Rifle (Assault Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/7/73/Carbine-rifle-icon.png/164px-Carbine-rifle-icon.png" width="150px">
+    carbinerifle = {
+        name = 'WEAPON_CARBINERIFLE',
+        label = 'Carbine Rifle',
+        components = {
+            default_clip = 'COMPONENT_CARBINERIFLE_CLIP_01',
+            extended_clip = 'COMPONENT_CARBINERIFLE_CLIP_02',
+            box_magazine = 'COMPONENT_CARBINERIFLE_CLIP_03',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            scope = 'COMPONENT_AT_SCOPE_MEDIUM',
+            suppressor = 'COMPONENT_AT_AR_SUPP',
+            grip = 'COMPONENT_AT_AR_AFGRIP',
+            yusuf_amir_luxury_finish = 'COMPONENT_CARBINERIFLE_VARMOD_LUXE'
+        }
+    },
+    ---<h4>Carbine Rifle MK2 (Assault Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/3/3f/Carbine-rifle-mk2-icon.png/164px-Carbine-rifle-mk2-icon.png" width="150px">
+    carbinerifle_mk2 = {
+        name = 'WEAPON_CARBINERIFLE_MK2',
+        label = 'Carbine Rifle MK2',
+        components = {
+            default_clip = 'COMPONENT_CARBINERIFLE_MK2_CLIP_01',
+            extended_clip = 'COMPONENT_CARBINERIFLE_MK2_CLIP_02',
+            tracer_rounds = 'COMPONENT_CARBINERIFLE_MK2_CLIP_TRACER',
+            incendiary_rounds = 'COMPONENT_CARBINERIFLE_MK2_CLIP_INCENDIARY',
+            armor_piercing_rounds = 'COMPONENT_CARBINERIFLE_MK2_CLIP_ARMORPIERCING',
+            full_metal_jacket_rounds = 'COMPONENT_CARBINERIFLE_MK2_CLIP_FMJ',
+            grip = 'COMPONENT_AT_AR_AFGRIP_02',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            holographic_sight = 'COMPONENT_AT_SIGHTS',
+            small_scope = 'COMPONENT_AT_SCOPE_MACRO_MK2',
+            large_scope = 'COMPONENT_AT_SCOPE_MEDIUM_MK2',
+            suppressor = 'COMPONENT_AT_AR_SUPP',
+            flat_muzzle_brake = 'COMPONENT_AT_MUZZLE_01',
+            tactical_muzzle_brake = 'COMPONENT_AT_MUZZLE_02',
+            fat_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_03',
+            precision_muzzle_brake = 'COMPONENT_AT_MUZZLE_04',
+            heavy_duty_muzzle_brake = 'COMPONENT_AT_MUZZLE_05',
+            slanted_muzzle_brake = 'COMPONENT_AT_MUZZLE_06',
+            split_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_07',
+            default_barrel = 'COMPONENT_AT_CR_BARREL_01',
+            heavy_barrel = 'COMPONENT_AT_CR_BARREL_02',
+            digital_camo = 'COMPONENT_CARBINERIFLE_MK2_CAMO',
+            brushstroke_camo = 'COMPONENT_CARBINERIFLE_MK2_CAMO_02',
+            woodland_camo = 'COMPONENT_CARBINERIFLE_MK2_CAMO_03',
+            skull = 'COMPONENT_CARBINERIFLE_MK2_CAMO_04',
+            sessanta_nove = 'COMPONENT_CARBINERIFLE_MK2_CAMO_05',
+            perseus = 'COMPONENT_CARBINERIFLE_MK2_CAMO_06',
+            leopard = 'COMPONENT_CARBINERIFLE_MK2_CAMO_07',
+            zebra = 'COMPONENT_CARBINERIFLE_MK2_CAMO_08',
+            geometric = 'COMPONENT_CARBINERIFLE_MK2_CAMO_09',
+            boom = 'COMPONENT_CARBINERIFLE_MK2_CAMO_10',
+            patriotic = 'COMPONENT_CARBINERIFLE_MK2_CAMO_IND_01'
+        }
+    },
+    ---<h4>Advanced Rifle (Assault Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/a/ae/Advanced-rifle-icon.png/164px-Advanced-rifle-icon.png" width="150px">
+    advancedrifle = {
+        name = 'WEAPON_ADVANCEDRIFLE',
+        label = 'Advanced Rifle',
+        components = {
+            default_clip = 'COMPONENT_ADVANCEDRIFLE_CLIP_01',
+            extended_clip = 'COMPONENT_ADVANCEDRIFLE_CLIP_02',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            scope = 'COMPONENT_AT_SCOPE_SMALL',
+            suppressor = 'COMPONENT_AT_AR_SUPP',
+            gilded_gun_metal_finish = 'COMPONENT_ADVANCEDRIFLE_VARMOD_LUXE'
+
+        }
+    },
+    ---<h4>Special Carbine (Assault Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/b/b7/Special-carbine-icon.png/164px-Special-carbine-icon.png" width="150px">
+    specialcarbine = {
+        name = 'WEAPON_SPECIALCARBINE',
+        label = 'Special Carbine',
+        components = {
+            default_clip = 'COMPONENT_SPECIALCARBINE_CLIP_01',
+            extended_clip = 'COMPONENT_SPECIALCARBINE_CLIP_02',
+            drum_magazine = 'COMPONENT_SPECIALCARBINE_CLIP_03',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            scope = 'COMPONENT_AT_SCOPE_MEDIUM',
+            suppressor = 'COMPONENT_AT_AR_SUPP_02',
+            grip = 'COMPONENT_AT_AR_AFGRIP',
+            etched_wood_grip_finish = 'COMPONENT_SPECIALCARBINE_VARMOD_LOWRIDER'
+        }
+    },
+    ---<h4>Special Carbine MK2 (Assault Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/3/34/Special-carbine-mk2-icon.png/164px-Special-carbine-mk2-icon.png" width="150px">
+    specialcarbine_mk2 = {
+        name = 'WEAPON_SPECIALCARBINE_MK2',
+        label = 'Special Carbine MK2',
+        components = {
+            default_clip = 'COMPONENT_SPECIALCARBINE_MK2_CLIP_01',
+            extended_clip = 'COMPONENT_SPECIALCARBINE_MK2_CLIP_02',
+            tracer_rounds = 'COMPONENT_SPECIALCARBINE_MK2_CLIP_TRACER',
+            incendiary_rounds = 'COMPONENT_SPECIALCARBINE_MK2_CLIP_INCENDIARY',
+            armor_piercing_rounds = 'COMPONENT_SPECIALCARBINE_MK2_CLIP_ARMORPIERCING',
+            full_metal_jacket_rounds = 'COMPONENT_SPECIALCARBINE_MK2_CLIP_FMJ',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            holographic_sight = 'COMPONENT_AT_SIGHTS',
+            small_scope = 'COMPONENT_AT_SCOPE_MACRO_MK2',
+            large_scope = 'COMPONENT_AT_SCOPE_MEDIUM_MK2',
+            suppressor = 'COMPONENT_AT_AR_SUPP_02',
+            flat_muzzle_brake = 'COMPONENT_AT_MUZZLE_01',
+            tactical_muzzle_brake = 'COMPONENT_AT_MUZZLE_02',
+            fat_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_03',
+            precision_muzzle_brake = 'COMPONENT_AT_MUZZLE_04',
+            heavy_duty_muzzle_brake = 'COMPONENT_AT_MUZZLE_05',
+            slanted_muzzle_brake = 'COMPONENT_AT_MUZZLE_06',
+            split_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_07',
+            grip = 'COMPONENT_AT_AR_AFGRIP_02',
+            default_barrel = 'COMPONENT_AT_SC_BARREL_01',
+            heavy_barrel = 'COMPONENT_AT_SC_BARREL_02',
+            digital_camo = 'COMPONENT_SPECIALCARBINE_MK2_CAMO',
+            brushstroke_camo = 'COMPONENT_SPECIALCARBINE_MK2_CAMO_02',
+            woodland_camo = 'COMPONENT_SPECIALCARBINE_MK2_CAMO_03',
+            skull = 'COMPONENT_SPECIALCARBINE_MK2_CAMO_04',
+            sessanta_nove = 'COMPONENT_SPECIALCARBINE_MK2_CAMO_05',
+            perseus = 'COMPONENT_SPECIALCARBINE_MK2_CAMO_06',
+            leopard = 'COMPONENT_SPECIALCARBINE_MK2_CAMO_07',
+            zebra = 'COMPONENT_SPECIALCARBINE_MK2_CAMO_08',
+            geometric = 'COMPONENT_SPECIALCARBINE_MK2_CAMO_09',
+            boom = 'COMPONENT_SPECIALCARBINE_MK2_CAMO_10',
+            patriotic = 'COMPONENT_SPECIALCARBINE_MK2_CAMO_IND_01'
+        }
+    },
+    ---<h4>Bullpup Rifle (Assault Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/0/09/Bullpup-rifle-icon.png/164px-Bullpup-rifle-icon.png" width="150px">
+    bullpuprifle = {
+        name = 'WEAPON_BULLPUPRIFLE',
+        label = 'Bullpup Rifle',
+        components = {
+            default_clip = 'COMPONENT_BULLPUPRIFLE_CLIP_01',
+            extended_clip = 'COMPONENT_BULLPUPRIFLE_CLIP_02',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            scope = 'COMPONENT_AT_SCOPE_SMALL',
+            suppressor = 'COMPONENT_AT_AR_SUPP',
+            grip = 'COMPONENT_AT_AR_AFGRIP',
+            gilded_gun_metal_finish = 'COMPONENT_BULLPUPRIFLE_VARMOD_LOW'
+        }
+    },
+    ---<h4>Bullpup Rifle MK2 (Assault Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/e/e1/Bullpup-rifle-mk2-icon.png/164px-Bullpup-rifle-mk2-icon.png" width="150px">
+    bullpuprifle_mk2 = {
+        name = 'WEAPON_BULLPUPRIFLE_MK2',
+        label = 'Bullpup Rifle MK2',
+        components = {
+            default_clip = 'COMPONENT_BULLPUPRIFLE_MK2_CLIP_01',
+            extended_clip = 'COMPONENT_BULLPUPRIFLE_MK2_CLIP_02',
+            tracer_rounds = 'COMPONENT_BULLPUPRIFLE_MK2_CLIP_TRACER',
+            incendiary_rounds = 'COMPONENT_BULLPUPRIFLE_MK2_CLIP_INCENDIARY',
+            armor_piercing_rounds = 'COMPONENT_BULLPUPRIFLE_MK2_CLIP_ARMORPIERCING',
+            full_metal_jacket_rounds = 'COMPONENT_BULLPUPRIFLE_MK2_CLIP_FMJ',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            holographic_sight = 'COMPONENT_AT_SIGHTS',
+            small_scope = 'COMPONENT_AT_SCOPE_MACRO_02_MK2',
+            medium_scope = 'COMPONENT_AT_SCOPE_SMALL_MK2',
+            default_barrel = 'COMPONENT_AT_BP_BARREL_01',
+            heavy_barrel = 'COMPONENT_AT_BP_BARREL_02',
+            suppressor = 'COMPONENT_AT_AR_SUPP',
+            flat_muzzle_brake = 'COMPONENT_AT_MUZZLE_01',
+            tactical_muzzle_brake = 'COMPONENT_AT_MUZZLE_02',
+            fat_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_03',
+            precision_muzzle_brake = 'COMPONENT_AT_MUZZLE_04',
+            heavy_duty_muzzle_brake = 'COMPONENT_AT_MUZZLE_05',
+            slanted_muzzle_brake = 'COMPONENT_AT_MUZZLE_06',
+            split_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_07',
+            grip = 'COMPONENT_AT_AR_AFGRIP_02',
+            digital_camo = 'COMPONENT_BULLPUPRIFLE_MK2_CAMO',
+            brushstroke_camo = 'COMPONENT_BULLPUPRIFLE_MK2_CAMO_02',
+            woodland_camo = 'COMPONENT_BULLPUPRIFLE_MK2_CAMO_03',
+            skull = 'COMPONENT_BULLPUPRIFLE_MK2_CAMO_04',
+            sessanta_nove = 'COMPONENT_BULLPUPRIFLE_MK2_CAMO_05',
+            perseus = 'COMPONENT_BULLPUPRIFLE_MK2_CAMO_06',
+            leopard = 'COMPONENT_BULLPUPRIFLE_MK2_CAMO_07',
+            zebra = 'COMPONENT_BULLPUPRIFLE_MK2_CAMO_08',
+            geometric = 'COMPONENT_BULLPUPRIFLE_MK2_CAMO_09',
+            boom = 'COMPONENT_BULLPUPRIFLE_MK2_CAMO_10',
+            patriotic = 'COMPONENT_BULLPUPRIFLE_MK2_CAMO_IND_01'
+        }
+    },
+    ---<h4>Compact Rifle (Assault Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/c/c9/Compact-rifle-icon.png/164px-Compact-rifle-icon.png" width="100px">
+    compactrifle = {
+        name = 'WEAPON_COMPACTRIFLE',
+        label = 'Compact Rifle',
+        components = {
+            default_clip = 'COMPONENT_COMPACTRIFLE_CLIP_01',
+            extended_clip = 'COMPONENT_COMPACTRIFLE_CLIP_02',
+            drum_magazine = 'COMPONENT_COMPACTRIFLE_CLIP_03'
+        }
+    },
+    ---<h4>Military Rifle (Assault Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/0/01/Military-rifle-icon.png/164px-Military-rifle-icon.png" width="150px">
+    militaryrifle = {
+        name = 'WEAPON_MILITARYRIFLE',
+        label = 'Military Rifle',
+        components = {
+            default_clip = 'COMPONENT_MILITARYRIFLE_CLIP_01',
+            extended_clip = 'COMPONENT_MILITARYRIFLE_CLIP_02',
+            iron_sights = 'COMPONENT_MILITARYRIFLE_SIGHT_01',
+            scope = 'COMPONENT_AT_SCOPE_SMALL',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            suppressor = 'COMPONENT_AT_AR_SUPP'
+        }
+    },
+    ---<h4>Heavy Rifle (Assault Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/2/20/Heavy-rifle-icon.png/164px-Heavy-rifle-icon.png" width="150px">
+    heavyrifle = {
+        name = 'WEAPON_HEAVYRIFLE',
+        label = 'Heavy Rifle'
+    },
+    ---<h4>Tactical Rifle (Assault Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/e/e8/Tactical-rifle-icon.png/164px-Tactical-rifle-icon.png" width="150px">
+    tacticalrifle = {
+        name = 'WEAPON_TACTICALRIFLE',
+        label = 'Tactical Rifle'
+    },
+    -- Machine guns
+
+    ---<h4>MG (Light Machine Guns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/9/98/Mg-icon.png/164px-Mg-icon.png" width="150px">
+    mg = {
+        name = 'WEAPON_MG',
+        label = 'MG',
+        components = {
+            default_clip = 'COMPONENT_MG_CLIP_01',
+            extended_clip = 'COMPONENT_MG_CLIP_02',
+            scope = 'COMPONENT_AT_SCOPE_SMALL_02',
+            yusuf_amir_luxury_finish = 'COMPONENT_MG_VARMOD_LOWRIDER',
+        }
+    },
+    ---<h4>Combat MG (Light Machine Guns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/9/94/Combat-mg-icon.png/164px-Combat-mg-icon.png" width="150px">
+    combatmg = {
+        name = 'WEAPON_COMBATMG',
+        label = 'Combat MG',
+        components = {
+            default_clip = 'COMPONENT_COMBATMG_CLIP_01',
+            extended_clip = 'COMPONENT_COMBATMG_CLIP_02',
+            scope = 'COMPONENT_AT_SCOPE_MEDIUM',
+            grip = 'COMPONENT_AT_AR_AFGRIP',
+            etched_wood_grip_finish = 'COMPONENT_COMBATMG_VARMOD_LOWRIDER',
+        }
+    },
+    ---<h4>Combat MG MK2 (Light Machine Guns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/3/31/Combat-mg-mk2-icon.png/164px-Combat-mg-mk2-icon.png" width="150px">
+    combatmg_mk2 = {
+        name = 'WEAPON_COMBATMG_MK2',
+        label = 'Combat MG MK2',
+        components = {
+            default_clip = 'COMPONENT_COMBATMG_MK2_CLIP_01',
+            extended_clip = 'COMPONENT_COMBATMG_MK2_CLIP_02',
+            tracer_rounds = 'COMPONENT_COMBATMG_MK2_CLIP_TRACER',
+            incendiary_rounds = 'COMPONENT_COMBATMG_MK2_CLIP_INCENDIARY',
+            armor_piercing_rounds = 'COMPONENT_COMBATMG_MK2_CLIP_ARMORPIERCING',
+            full_metal_jacket_rounds = 'COMPONENT_COMBATMG_MK2_CLIP_FMJ',
+            grip = 'COMPONENT_AT_AR_AFGRIP_02',
+            holographic_sight = 'COMPONENT_AT_SIGHTS',
+            medium_scope = 'COMPONENT_AT_SCOPE_SMALL_MK2',
+            large_scope = 'COMPONENT_AT_SCOPE_MEDIUM_MK2',
+            flat_muzzle_brake = 'COMPONENT_AT_MUZZLE_01',
+            tactical_muzzle_brake = 'COMPONENT_AT_MUZZLE_02',
+            fat_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_03',
+            precision_muzzle_brake = 'COMPONENT_AT_MUZZLE_04',
+            heavy_duty_muzzle_brake = 'COMPONENT_AT_MUZZLE_05',
+            slanted_muzzle_brake = 'COMPONENT_AT_MUZZLE_06',
+            split_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_07',
+            default_barrel = 'COMPONENT_AT_MG_BARREL_01',
+            heavy_barrel = 'COMPONENT_AT_MG_BARREL_02',
+            digital_camo = 'COMPONENT_COMBATMG_MK2_CAMO',
+            brushstroke_camo = 'COMPONENT_COMBATMG_MK2_CAMO_02',
+            woodland_camo = 'COMPONENT_COMBATMG_MK2_CAMO_03',
+            skull = 'COMPONENT_COMBATMG_MK2_CAMO_04',
+            sessanta_nove = 'COMPONENT_COMBATMG_MK2_CAMO_05',
+            perseus = 'COMPONENT_COMBATMG_MK2_CAMO_06',
+            leopard = 'COMPONENT_COMBATMG_MK2_CAMO_07',
+            zebra = 'COMPONENT_COMBATMG_MK2_CAMO_08',
+            geometric = 'COMPONENT_COMBATMG_MK2_CAMO_09',
+            boom = 'COMPONENT_COMBATMG_MK2_CAMO_10',
+            patriotic = 'COMPONENT_COMBATMG_MK2_CAMO_IND_01'
+        }
+    },
+    ---<h4>Gusenberg (Light Machine Guns)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/8/8f/Gusenberg-sweeper-icon.png/164px-Gusenberg-sweeper-icon.png" width="150px">
+    gusenberg = {
+        name = 'WEAPON_GUSENBERG',
+        label = 'Gusenberg',
+        components = {
+            default_clip = 'COMPONENT_GUSENBERG_CLIP_01',
+            extended_clip = 'COMPONENT_GUSENBERG_CLIP_02'
+        }
+    },
+    -- Sniper_rifle
+
+    ---<h4>Sniper Rifle (Sniper Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/e/ec/Sniper-rifle-icon.png/164px-Sniper-rifle-icon.png" width="200px">
+    sniperrifle = {
+        name = 'WEAPON_SNIPERRIFLE',
+        label = 'Snier Rifle',
+        components = {
+            default_clip = 'COMPONENT_SNIPERRIFLE_CLIP_01',
+            suppressor = 'COMPONENT_AT_AR_SUPP_02',
+            scope = 'COMPONENT_AT_SCOPE_LARGE',
+            advanced_scope = 'COMPONENT_AT_SCOPE_MAX',
+            etched_wood_grip_finish = 'COMPONENT_SNIPERRIFLE_VARMOD_LUXE'
+        }
+    },
+    ---<h4>Heavy Sniper (Sniper Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/5/54/Heavy-sniper-icon.png/164px-Heavy-sniper-icon.png" width="200px">
+    heavysniper = {
+        name = 'WEAPON_HEAVYSNIPER',
+        label = 'Heavy Sniper',
+        components = {
+            default_clip = 'COMPONENT_SNIPERRIFLE_VARMOD_LUXE',
+            scope = 'COMPONENT_AT_SCOPE_LARGE',
+            advanced_scope = 'COMPONENT_AT_SCOPE_MAX',
+        }
+    },
+    ---<h4>Heavy Sniper MK2 (Sniper Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/c/cf/Heavy-sniper-mk2-icon.png/164px-Heavy-sniper-mk2-icon.png" width="200px">
+    heavysniper_mk2 = {
+        name = 'WEAPON_HEAVYSNIPER_MK2',
+        label = 'Heavy Sniper MK2',
+        components = {
+            default_clip = 'COMPONENT_HEAVYSNIPER_MK2_CLIP_01',
+            extended_clip = 'COMPONENT_HEAVYSNIPER_MK2_CLIP_02',
+            incendiary_rounds = 'COMPONENT_HEAVYSNIPER_MK2_CLIP_INCENDIARY',
+            armor_piercing_rounds = 'COMPONENT_HEAVYSNIPER_MK2_CLIP_ARMORPIERCING',
+            full_metal_jacket_rounds = 'COMPONENT_HEAVYSNIPER_MK2_CLIP_FMJ',
+            explosive_rounds = 'COMPONENT_HEAVYSNIPER_MK2_CLIP_EXPLOSIVE',
+            zoom_scope = 'COMPONENT_AT_SCOPE_LARGE_MK2',
+            advanced_scope = 'COMPONENT_AT_SCOPE_MAX',
+            nightvision_scope = 'COMPONENT_AT_SCOPE_NV',
+            thermal_scope = 'COMPONENT_AT_SCOPE_THERMAL',
+            suppressor = 'COMPONENT_AT_SR_SUPP_03',
+            squared_muzzle_brake = 'COMPONENT_AT_MUZZLE_08',
+            bell_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_09',
+            default_barrel = 'COMPONENT_AT_SR_BARREL_01',
+            heavy_barrel = 'COMPONENT_AT_SR_BARREL_02',
+            digital_camo = 'COMPONENT_HEAVYSNIPER_MK2_CAMO',
+            brushstroke_camo = 'COMPONENT_HEAVYSNIPER_MK2_CAMO_02',
+            woodland_camo = 'COMPONENT_HEAVYSNIPER_MK2_CAMO_03',
+            skull = 'COMPONENT_HEAVYSNIPER_MK2_CAMO_04',
+            sessanta_nove = 'COMPONENT_HEAVYSNIPER_MK2_CAMO_05',
+            perseus = 'COMPONENT_HEAVYSNIPER_MK2_CAMO_06',
+            leopard = 'COMPONENT_HEAVYSNIPER_MK2_CAMO_07',
+            zebra = 'COMPONENT_HEAVYSNIPER_MK2_CAMO_08',
+            geometric = 'COMPONENT_HEAVYSNIPER_MK2_CAMO_09',
+            boom = 'COMPONENT_HEAVYSNIPER_MK2_CAMO_10',
+            patriotic = 'COMPONENT_HEAVYSNIPER_MK2_CAMO_IND_01',
+        }
+    },
+    ---<h4>Marksman Rifle (Sniper Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/2/22/Marksman-rifle-icon.png/164px-Marksman-rifle-icon.png" width="200px">
+    marksmanrifle = {
+        name = 'WEAPON_MARKSMANRIFLE',
+        label = 'Marksman Rifle',
+        components = {
+            default_clip = 'COMPONENT_MARKSMANRIFLE_CLIP_01',
+            extended_clip = 'COMPONENT_MARKSMANRIFLE_CLIP_02',
+            scope = 'COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            suppressor = 'COMPONENT_AT_AR_SUPP',
+            grip = 'COMPONENT_AT_AR_AFGRIP',
+            yusuf_amir_luxury_finish = 'COMPONENT_MARKSMANRIFLE_VARMOD_LUXE'
+        }
+    },
+    ---<h4>Marksman Rifle MK2 (Sniper Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/1/17/Marksman-rifle-mk2-icon.png/164px-Marksman-rifle-mk2-icon.png" width="200px">
+    marksmanrifle_mk2 = {
+        name = 'WEAPON_MARKSMANRIFLE_MK2',
+        label = 'Marksman Rifle MK2',
+        components = {
+            default_clip = 'COMPONENT_MARKSMANRIFLE_MK2_CLIP_01',
+            extended_clip = 'COMPONENT_MARKSMANRIFLE_MK2_CLIP_02',
+            tracer_rounds = 'COMPONENT_MARKSMANRIFLE_MK2_CLIP_TRACER',
+            incendiary_rounds = 'COMPONENT_MARKSMANRIFLE_MK2_CLIP_TRACER',
+            armor_piercing_rounds = 'COMPONENT_MARKSMANRIFLE_MK2_CLIP_ARMORPIERCING',
+            full_metal_jacket_rounds = 'COMPONENT_MARKSMANRIFLE_MK2_CLIP_FMJ',
+            holographic_sight = 'COMPONENT_AT_SIGHTS',
+            large_scope = 'COMPONENT_AT_SCOPE_MEDIUM_MK2',
+            zoom_scope = 'COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM_MK2',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            suppressor = 'COMPONENT_AT_AR_SUPP',
+            flat_muzzle_brake = 'COMPONENT_AT_MUZZLE_01',
+            tactical_muzzle_brake = 'COMPONENT_AT_MUZZLE_02',
+            fat_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_03',
+            precision_muzzle_brake = 'COMPONENT_AT_MUZZLE_04',
+            heavy_duty_muzzle_brake = 'COMPONENT_AT_MUZZLE_05',
+            slanted_muzzle_brake = 'COMPONENT_AT_MUZZLE_06',
+            split_end_muzzle_brake = 'COMPONENT_AT_MUZZLE_07',
+            default_barrel = 'COMPONENT_AT_MRFL_BARREL_01',
+            heavy_barrel = 'COMPONENT_AT_MRFL_BARREL_02',
+            grip = 'COMPONENT_AT_AR_AFGRIP_02',
+            digital_camo = 'COMPONENT_MARKSMANRIFLE_MK2_CAMO',
+            brushstroke_camo = 'COMPONENT_MARKSMANRIFLE_MK2_CAMO_02',
+            woodland_camo = 'COMPONENT_MARKSMANRIFLE_MK2_CAMO_03',
+            skull = 'COMPONENT_MARKSMANRIFLE_MK2_CAMO_04',
+            sessanta_nove = 'COMPONENT_MARKSMANRIFLE_MK2_CAMO_05',
+            perseus = 'COMPONENT_MARKSMANRIFLE_MK2_CAMO_06',
+            leopard = 'COMPONENT_MARKSMANRIFLE_MK2_CAMO_07',
+            zebra = 'COMPONENT_MARKSMANRIFLE_MK2_CAMO_08',
+            geometric = 'COMPONENT_MARKSMANRIFLE_MK2_CAMO_09',
+            boom = 'COMPONENT_MARKSMANRIFLE_MK2_CAMO_10',
+            boom_ind = 'COMPONENT_MARKSMANRIFLE_MK2_CAMO_IND_01'
+        }
+    },
+    ---<h4>Precision Rifle (Sniper Rifles)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/5/5b/Precision-rifle-icon.png/164px-Precision-rifle-icon.png" width="200px">
+    precisionrifle = {
+        name = 'WEAPON_PRECISIONRIFLE',
+        label = 'Precision Rifle'
+    },
+    -- Heavy Weapons
+
+    ---<h4>RPG (Heavy Weapons)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/7/7d/Rocket-launcher-icon.png/164px-Rocket-launcher-icon.png" width="200px">
+    rpg = {
+        name = 'WEAPON_RPG',
+        label = 'RPG'
+    },
+    ---<h4>Grenade Launcher (Heavy Weapons)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/a/ae/Grenade-launcher-icon.png/164px-Grenade-launcher-icon.png" width="200px">
+    grenadelauncher = {
+        name = 'WEAPON_GRENADELAUNCHER',
+        label = 'Grenade Launcher',
+        components = {
+            default_clip = 'COMPONENT_GRENADELAUNCHER_CLIP_01',
+            flashlight = 'COMPONENT_AT_AR_FLSH',
+            grip = 'COMPONENT_AT_AR_AFGRIP',
+            scope = 'COMPONENT_AT_SCOPE_SMALL'
+        }
+    },
+    ---<h4>Grenade Launcher Smoke (Heavy Weapons)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/a/ae/Grenade-launcher-icon.png/164px-Grenade-launcher-icon.png" width="200px">
+    grenadelauncher_smoke = {
+        name = 'WEAPON_GRENADELAUNCHER_SMOKE',
+        label = 'Grenade Launcher Smoke'
+    },
+    ---<h4>Minigun (Heavy Weapons)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/8/8b/Minigun-icon.png/164px-Minigun-icon.png" width="200px">
+    minigun = {
+        name = 'WEAPON_MINIGUN',
+        label = 'Minigun'
+    }, 
+    ---<h4>Firework Launcher (Heavy Weapons)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/5/54/Firework-launcher-icon.png/164px-Firework-launcher-icon.png" width="200px">
+    firework = {
+        name = 'WEAPON_FIREWORK',
+        label = 'Firework Launcher'
+    },
+    ---<h4>Railgun (Heavy Weapons)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/a/ad/Railgun-icon.png/164px-Railgun-icon.png" width="200px">
+    railgun = {
+        name = 'WEAPON_RAILGUN',
+        label = 'Railgun',
+    },
+    ---<h4>Homing Launcher (Heavy Weapons)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/1/14/Homing-launcher-icon.png/164px-Homing-launcher-icon.png" width="200px">
+    hominglauncher = {
+        name = 'WEAPON_HOMINGLAUNCHER',
+        label = 'Homing Launcher',
+    },
+    ---<h4>Compact Grenade Launcher (Heavy Weapons)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/0/0d/Grenade-compact-launcher-icon.png/164px-Grenade-compact-launcher-icon.png" width="100px">
+    compactlauncher = {
+        name = 'WEAPON_COMPACTLAUNCHER',
+        label = 'Compact Grenade Launcher',
+    },
+    ---<h4>Widowmaker (Heavy Weapons)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/e/ec/Widowmaker-icon.png/164px-Widowmaker-icon.png" width="200px">
+    rayminigun = {
+        name = 'WEAPON_RAYMINIGUN',
+        label = 'Widowmaker',
+    },
+    ---<h4>Compact EMP Launcher (Heavy Weapons)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/e/ed/EMP-launcher-icon.png/164px-EMP-launcher-icon.png" width="120px">
+    emplauncher = {
+        name = 'WEAPON_EMPLAUNCHER',
+    },
+    ---<h4>Railgun XM3 (Heavy Weapons)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/a/ad/Railgun-icon.png/164px-Railgun-icon.png" width="200px">
+    railgunxm3 = {
+        name = 'WEAPON_RAILGUNXM3',
+        label = 'Railgun XM3'
+    },
+    -- Throwables
+
+    ---<h4>Grenade (Throwables)</h4> 
+    ---<img src="https://wiki.rage.mp/images/5/54/Grenade-icon.png" width="50px">
+    grenade = {
+        name = 'WEAPON_GRENADE',
+        label = 'Grenade'
+    },
+    ---<h4>BZ Gas (Throwables)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/d/d3/Bz-gas-icon.png/56px-Bz-gas-icon.png" width="40px">
+    bzgas = {
+        name = 'WEAPON_BZGAS',
+        label = 'BZ Gas'
+    },
+    ---<h4>Molotov Cocktail (Throwables)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/4/46/Molotov-icon.png/120px-Molotov-icon.png" width="100px">
+    molotov = {
+        name = 'WEAPON_MOLOTOV',
+        label = 'Molotov Cocktail'
+    },
+    ---<h4>Tear Gas (Throwables)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/8/8a/Tear-gas-icon.png/56px-Tear-gas-icon.png" width="40px">
+    smokegrenade = {
+        name = 'WEAPON_SMOKEGRENADE',
+        label = 'Tear Gas'
+    },
+    ---<h4>Flare (Throwables)</h4> 
+    ---<img src="https://wiki.rage.mp/images/0/09/Flare-icon.png" width="100px">
+    flare = {
+        name = 'WEAPON_FLARE',
+        label = 'Flare'
+    },
+    ---<h4>Sticky Bomb (Throwables)</h4> 
+    ---<img src="https://wiki.rage.mp/images/3/3a/Sticky-bomb-icon.png" width="100px">
+    stickybomb = {
+        name = 'WEAPON_STICKYBOMB',
+        label = 'Sticky Bomb'
+    },
+    ---<h4>Proximity Mine (Throwables)</h4> 
+    ---<img src="https://wiki.rage.mp/images/a/a8/Proximity-mines-icon.png" width="100px">
+    proxmine = {
+        name = 'WEAPON_PROXMINE',
+        label = 'Proximity Mine'
+    },
+    ---<h4>Snowball (Throwables)</h4> 
+    ---<img src="https://wiki.rage.mp/images/0/04/Snowball-icon.png" width="70px">
+    snowball = {
+        name = 'WEAPON_SNOWBALL',
+        label = 'Snowball'
+    },
+    ---<h4>Pipe Bomb (Throwables)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/d/dc/Pipe-bomb-icon.png/164px-Pipe-bomb-icon.png" width="100px">
+    pipebomb = {
+        name = 'WEAPON_PIPEBOMB',
+        label = 'Pipe Bomb'
+    },
+    ---<h4>Baseball (Throwables)</h4> 
+    ---<img src="https://wiki.rage.mp/images/4/4b/Ball-icon.png" width="70px">
+    ball = {
+        name = 'WEAPON_BALL',
+        label = 'Baseball'
+    },
+    ---<h4>Acid Package (Throwables)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/0/01/Acid-package-icon.png/164px-Acid-package-icon.png" width="120px">
+    acidpackage = {
+        name = 'WEAPON_ACIDPACKAGE',
+        label = 'Acid Package'
+    },
+    -- Misc
+
+    ---<h4>Jerry Can (Miscellaneous)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/2/2b/Petrolcan-icon.png/94px-Petrolcan-icon.png" width="70px">
+    petrolcan = {
+        name = 'WEAPON_PETROLCAN'
+    },
+    ---<h4>Fire Extinguisher (Miscellaneous)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/1/13/Fire2.png/51px-Fire2.png" width="50px">
+    fireextinguisher = {
+        name = 'WEAPON_FIREEXTINGUISHER'
+    },
+    ---<h4>Parachute (Miscellaneous)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/2/24/Parachute-icon.png/93px-Parachute-icon.png" width="70px">
+    parachute = {
+        name = 'WEAPON_PARACHUTE'
+    },
+    ---<h4>Hazardous Jerry Can (Miscellaneous)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/2/2b/Petrolcan-icon.png/94px-Petrolcan-icon.png" width="70px">
+    hazardcan = {
+        name = 'WEAPON_HAZARDCAN'
+    },
+    ---<h4>Fertilizer Can (Miscellaneous)</h4> 
+    ---<img src="https://wiki.rage.mp/images/thumb/2/2b/Petrolcan-icon.png/94px-Petrolcan-icon.png" width="70px">
+    fertilizercan = {
+        name = 'WEAPON_FERTILIZERCAN'
+    }
 }

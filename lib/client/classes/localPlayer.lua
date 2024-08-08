@@ -7,7 +7,7 @@ player = Class.singleton("HFPD.LocalPlayer", "lib.entity.player.local", function
 
 	function self:Constructor()
 		self:super();
-		self.ped = flib.client.class.playerPed(self.id);
+		self.ped = flib.client.class.playerPed(PlayerPedId());
 		self.loaded = false;
 		self.unl_stamina = false;
 	end

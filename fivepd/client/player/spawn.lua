@@ -29,14 +29,16 @@ lib.events.on.net(eHyruleEvents.playerLoaded, function(event, playerData)
     player:SetWantedLevel(0);
     player:SetMaxWantedLevel(0);
 
-    local weapon = flib.common.class.weapon('switchblade');
+    local start_weapon = eWeapons.appistol;
 
-    ped:AddWeapon(weapon:GetName(), 0, false);
-    ped:AddWeapon('WEAPON_PISTOL50', 200, true);
+    local weapon = flib.common.class.weapon(start_weapon);
+    ped:AddWeapon(start_weapon.name, 200, true);
+    weapon:AddComponents(weapon:GetComponents().gilded_gun_metal_finish);
+    weapon:AddComponents(start_weapon.components.flashlight);
+    weapon:AddComponents(start_weapon.components.suppressor);
+    weapon:AddComponents(start_weapon.components.extended_clip);
 
-    console.log(('^7We have add ^3%s^7 ^4(^5%s^4/^5%s^4)^7 in your inventory weapons!^0'):format(weapon:GetLabel(), weapon:GetJoaatHash(), weapon:GetHexHash()));
-
-    pt()
+    console.log(('^7We added ^3%s^7 ^4(^5%s^4)^7 in your weapon inventory!^0'):format(weapon:GetLabel(), weapon:GetHash()));
 
     ShutdownLoadingScreen();
     ShutdownLoadingScreenNui();
@@ -44,7 +46,3 @@ lib.events.on.net(eHyruleEvents.playerLoaded, function(event, playerData)
 
     player.loaded = true;
 end)
-
-function pt()
-    
-end
