@@ -1,5 +1,6 @@
 local menu = require 'fivepd.client.menus.main.main';
 require 'fivepd.client.menus.main.self';
+require 'fivepd.client.menus.main.weapon';
 
 RegisterCommand(fConfig.mainMenu.command, function()
     local is_dead = player:GetPed():IsDead();

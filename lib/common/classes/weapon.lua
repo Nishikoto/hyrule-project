@@ -24,6 +24,7 @@ function Weapon:Constructor(weapon)
     self.name = weapon.name;
     self.hash = lib.game.hash(self.name);
     self.label = weapon.label;
+    self.type = weapon.type;
 
     if (weapon.components) then
         self.components = weapon.components;
@@ -44,11 +45,13 @@ function Weapon:GetHash()
     return self.hash;
 end
 
+function Weapon:GetType()
+    return self.type;
+end
+
 function Weapon:GetComponents()
     return self.components;
 end
-
--- TODO: Set Component
 
 function Weapon:AddComponents(componentsHash)
     return GiveWeaponComponentToPed(player:GetPed().id, self.hash, lib.game.hash(componentsHash));

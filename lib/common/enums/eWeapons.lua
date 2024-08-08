@@ -5,60 +5,70 @@ return {
     ---<h4>Unarmed (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/b/b7/Fist-icon.png" width="80px"> 
     unarmed = {
+        type = 'MELEE',
         name = 'WEAPON_UNARMED',
         label = 'Fist'
     },
     ---<h4>Antique Cavalry Dagger (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/f/f5/Antique-cavalry-dagger-icon.png/164px-Antique-cavalry-dagger-icon.png" width="120px"> 
     dagger = {
+        type = 'MELEE',
         name = 'WEAPON_DAGGER',
         label = 'Antique Cavalry Dagger'
     },
     ---<h4>Baseball Bat (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/8/8b/Baseball-bat-icon.png/164px-Baseball-bat-icon.png" width="120px"> 
     bat = {
+        type = 'MELEE',
         name = 'WEAPON_BAT',
         label = 'Baseball Bat'
     },
     ---<h4>Broken Bottle (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/5/5b/Broken-bottle-icon.png" width="100px"> 
     bottle = {
+        type = 'MELEE',
         name = 'WEAPON_BOTTLE',
         label = 'Broken Bottler'
     },
     ---<h4>Crowbar (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/8/8a/Crowbar-icon.png/164px-Crowbar-icon.png" width="120px"> 
     crowbar = {
+        type = 'MELEE',
         name = 'WEAPON_CROWBAR',
         label = 'Crowbar'
     },
     ---<h4>Flashlight (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/8/85/Flashlight-icon.png/164px-Flashlight-icon.png" width="100px"> 
     flashlight = {
+        type = 'MELEE',
         name = 'WEAPON_FLASHLIGHT',
         label = 'Flashlight'
     },
     ---<h4>Golf Club (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/c/cb/Golf-club-icon.png/164px-Golf-club-icon.png" width="120px"> 
     golfclub = {
+        type = 'MELEE',
         name = 'WEAPON_GOLFCLUB',
         label = 'Golf Club'
     },
     ---<h4>Hammer (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/e/ec/Hammer-icon.png/164px-Hammer-icon.png" width="120px"> 
     hammer = {
+        type = 'MELEE',
         name = 'WEAPON_HAMMER',
         label = 'Hammer'
     },
     ---<h4>Hatchet (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/e/eb/Hatchet-icon.png/164px-Hatchet-icon.png" width="120px"> 
     hatchet = {
+        type = 'MELEE',
         name = 'WEAPON_HATCHET',
         label = 'Hatchet'
     },
     ---<h4>Knuckle (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/b/b7/Knuckles-icon.png" width="100px"> 
     knuckle = {
+        type = 'MELEE',
         name = 'WEAPON_KNUCKLE',
         label = 'Brass Knuckles',
         components = {
@@ -77,18 +87,21 @@ return {
     ---<h4>Knife (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/8/8c/Knife-icon.png/164px-Knife-icon.png" width="120px"> 
     knife = {
+        type = 'MELEE',
         name = 'WEAPON_KNIFE',
         label = 'Knife'
     },
     ---<h4>Machete (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/d/dc/Machete-icon.png/164px-Machete-icon.png" width="120px"> 
     machete = {
+        type = 'MELEE',
         name = 'WEAPON_MACHETE',
         label = 'Machete'
     },
     ---<h4>Switchblade (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/c/ce/Switch-blade-icon.png/164px-Switch-blade-icon.png" width="120px"> 
     switchblade = {
+        type = 'MELEE',
         name = 'WEAPON_SWITCHBLADE',
         label = 'Switchblade',
         components = {
@@ -100,36 +113,42 @@ return {
     ---<h4>Nightstick (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/e/e6/Nightstick-icon.png/164px-Nightstick-icon.png" width="120px"> 
     nightstick = {
+        type = 'MELEE',
         name = 'WEAPON_NIGHTSTICK',
         label = 'Nightstick'
     },
     ---<h4>Pipe Wrench (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/2/22/Pipe-wrench-icon.png/164px-Pipe-wrench-icon.png" width="120px"> 
     wrench = {
+        type = 'MELEE',
         name = 'WEAPON_WRENCH',
         label = 'Pipe Wrench'
     },
     ---<h4>Battle Axe (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/3/3b/Battle-axe-icon.png/164px-Battle-axe-icon.png" width="120px"> 
     battleaxe = {
+        type = 'MELEE',
         name = 'WEAPON_BATTLAXE',
         label = 'Battle Axe'
     },
     ---<h4>Pool Cue (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/3/3a/Pool-cue-icon.png/164px-Pool-cue-icon.png" width="120px"> 
     poolcue = {
+        type = 'MELEE',
         name = 'WEAPON_POOLCUE',
         label = 'Pool Cue'
     },
     ---<h4>Stone Hatchet (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/2/21/Stone-hatchet-icon.png/164px-Stone-hatchet-icon.png" width="120px"> 
     stone_hatchet = {
+        type = 'MELEE',
         name = 'WEAPON_STONE_HATCHET',
         label = 'Stone Hatchet'
     },
     ---<h4>Candy Cane (Melee)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/5/5c/Candy-cane-icon.png/164px-Candy-cane-icon.png" width="120px"> 
     candycane = {
+        type = 'MELEE',
         name = 'WEAPON_CANDYCANE',
         label = 'Candy Cane'
     },
@@ -138,6 +157,7 @@ return {
     ---<h4>Pistol (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/9/95/Pistol-icon.png" width="100px"> 
     pistol = {
+        type = 'HANDGUN',
         name = 'WEAPON_PISTOL',
         label = 'Pistol',
         components = {
@@ -151,6 +171,7 @@ return {
     ---<h4>Pistol MK2 (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/4/43/Pistol-mk2-icon.png" width="100px">
     pistol_mk2 = {
+        type = 'HANDGUN',
         name = 'WEAPON_PISTOL_MK2',
         label = 'Pistol MK2',
         components = {
@@ -191,6 +212,7 @@ return {
     ---<h4>Combat Pistol (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/1/16/Combat-pistol-icon.png" width="100px">
     combatpistol = {
+        type = 'HANDGUN',
         name = 'WEAPON_COMBATPISTOL',
         label = 'Combat Pistol',
         components = {
@@ -204,6 +226,7 @@ return {
     ---<h4>AP Pistol (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/4/4d/Appistol-icon.png" width="100px">
     appistol = {
+        type = 'HANDGUN',
         name = 'WEAPON_APPISTOL',
         label = 'AP Pistol',
         components = {
@@ -217,12 +240,14 @@ return {
     ---<h4>Stungun (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/3/3c/Stungun-icon.png" width="100px">
     stungun = {
+        type = 'HANDGUN',
         name = 'WEAPON_STUNGUN',
         label = 'Stungun'
     },
     ---<h4>Pistol .50 (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/c/c5/Pistol.50-icon.png" width="100px">
     pistol50 = {
+        type = 'HANDGUN',
         name = 'WEAPON_PISTOL50',
         label = 'Pistol .50',
         components = {
@@ -236,6 +261,7 @@ return {
     ---<h4>SNS Pistol (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/9/96/Sns-pistol-icon.png" width="90px">
     snspistol = {
+        type = 'HANDGUN',
         name = 'WEAPON_SNSPISTOL',
         label = 'SNS Pistol',
         components = {
@@ -247,6 +273,7 @@ return {
     ---<h4>SNS Pistol MK2 (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/1/16/Sns-pistol-mk2-icon.png" width="90px">
     snspistol_mk2 = {
+        type = 'HANDGUN',
         name = 'WEAPON_SNSPISTOL_MK2',
         label = 'SNS Pistol MK2',
         components = {
@@ -287,6 +314,7 @@ return {
     ---<h4>Heavy Pistol (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/7/78/Heavy-pistol-icon.png" width="100px">
     heavypistol = {
+        type = 'HANDGUN',
         name = 'WEAPON_HEAVYPISTOL',
         label = 'Heavy Pistol',
         components = {
@@ -300,6 +328,7 @@ return {
     ---<h4>Vintage Pistol (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/9/97/Vintage-pistol-icon.png" width="100px">
     vintagepistol = {
+        type = 'HANDGUN',
         name = 'WEAPON_VINTAGEPISTOL',
         label = 'Vintage Pistol',
         components = {
@@ -311,18 +340,21 @@ return {
     ---<h4>Flaregun (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/0/0d/Flaregun-icon.png" width="100px">
     flaregun = {
+        type = 'HANDGUN',
         name = 'WEAPON_FLAREGUN',
         label = 'Flaregun'
     },
     ---<h4>Marksman Pistol (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/4/47/Marksman-pistol-icon.png/164px-Marksman-pistol-icon.png" width="110px">
     marksmanpistol = {
+        type = 'HANDGUN',
         name = 'WEAPON_MARKSMANPISTOL',
         label = 'Marksman Pistol'
     },
     ---<h4>Heavy Revolver (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/9/93/Heavy-revolver-icon.png/164px-Heavy-revolver-icon.png" width="110px">
     revolver = {
+        type = 'HANDGUN',
         name = 'WEAPON_REVOLVER',
         label = 'Heavy Revolver',
         components = {
@@ -334,6 +366,7 @@ return {
     ---<h4>Heavy Revolver MK2 (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/c/c0/Heavy-revolver-mk2-icon.png/164px-Heavy-revolver-mk2-icon.png" width="110px">
     revolver_mk2 = {
+        type = 'HANDGUN',
         name = 'WEAPON_REVOLVER_MK2',
         label = 'Heavy Revolver MK2',
         components = {
@@ -362,12 +395,14 @@ return {
     ---<h4>Double Action Revolver (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/4/45/Double-action-revolver-icon.png/164px-Double-action-revolver-icon.png" width="110px">
     doubleaction = {
+        type = 'HANDGUN',
         name = 'WEAPON_DOUBLEACTION',
         label = 'Double Action Revolver'
     },
     ---<h4>Up-n-Atomizer (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/8/89/Up-n-atomizer-icon.png/164px-Up-n-atomizer-icon.png" width="110px">
     raypistol = {
+        type = 'HANDGUN',
         name = 'WEAPON_RAYPISTOL',
         label = 'Up-n-Atomizer',
         components = {
@@ -377,6 +412,7 @@ return {
     ---<h4>Ceramic Pistol (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/a/ad/Ceramic-pistol-icon.png" width="100px">
     ceramicpistol = {
+        type = 'HANDGUN',
         name = 'WEAPON_CERAMICPISTOL',
         label = 'Ceramic Pistol',
         components = {
@@ -388,14 +424,16 @@ return {
     ---<h4>Navy Revolver (Handguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/1/15/Navy-revolver-icon.png/164px-Navy-revolver-icon.png" width="120px">
     navyrevolver = {
+        type = 'HANDGUN',
         name = 'WEAPON_NAVYREVOLVER',
         label = 'Navy Revolver'
     },
     -- Submachine Guns
 
-    ---<h4>Micro SMG (Submanchine Guns)</h4> 
+    ---<h4>Micro SMG (Submachine Guns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/3/3a/Micro-smg-icon.png/164px-Micro-smg-icon.png" width="100px">
     microsmg = {
+        type = 'SUBMACHINE_GUN',
         name = 'WEAPON_MICROSMG',
         label = 'Micro SMG',
         components = {
@@ -407,9 +445,10 @@ return {
             yusuf_amir_luxury_finish = 'COMPONENT_MICROSMG_VARMOD_LUXE'
         }
     },
-    ---<h4>SMG (Submanchine Guns)</h4> 
+    ---<h4>SMG (Submachine Guns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/3/30/Smg-icon.png/164px-Smg-icon.png" width="150px">
     smg = {
+        type = 'SUBMACHINE_GUN',
         name = 'WEAPON_SMG',
         label = 'SMG',
         components = {
@@ -422,9 +461,10 @@ return {
             yusuf_amir_luxury_finish = 'COMPONENT_SMG_VARMOD_LUXE'
         }
     },
-    ---<h4>SMG MK2 (Submanchine Guns)</h4> 
+    ---<h4>SMG MK2 (Submachine Guns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/d/d1/Smg-mk2-icon.png/164px-Smg-mk2-icon.png" width="100px">
     smg_mk2 = {
+        type = 'SUBMACHINE_GUN',
         name = 'WEAPON_SMG_MK2',
         label = 'SMG MK2',
         components = {
@@ -461,9 +501,10 @@ return {
             patriotic = 'COMPONENT_SMG_MK2_CAMO_IND_01'
         }
     },
-    ---<h4>Assault SMG (Submanchine Guns)</h4> 
+    ---<h4>Assault SMG (Submachine Guns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/3/30/Assault-smg-icon.png/164px-Assault-smg-icon.png" width="150px">
     assaultsmg = {
+        type = 'SUBMACHINE_GUN',
         name = 'WEAPON_ASSAULTSMG',
         label = 'Assault SMG',
         components = {
@@ -475,9 +516,10 @@ return {
             yusuf_amir_luxury_finish = 'COMPONENT_ASSAULTSMG_VARMOD_LOWRIDER'
         }
     },
-    ---<h4>Combat PDW (Submanchine Guns)</h4> 
+    ---<h4>Combat PDW (Submachine Guns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/4/45/Combat-pdw-icon.png/164px-Combat-pdw-icon.png" width="150px">
     combatpdw = {
+        type = 'SUBMACHINE_GUN',
         name = 'WEAPON_COMBATPDW',
         label = 'Combat PDW',
         components = {
@@ -489,9 +531,10 @@ return {
             scope = 'COMPONENT_AT_SCOPE_SMALL'
         }
     },
-    ---<h4>Machine Pistol (Submanchine Guns)</h4> 
+    ---<h4>Machine Pistol (Submachine Guns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/2/24/Machine-pistol-icon.png/164px-Machine-pistol-icon.png" width="100px">
     machinepistol = {
+        type = 'SUBMACHINE_GUN',
         name = 'WEAPON_MACHINEPISTOL',
         label = 'Machine Pistol',
         components = {
@@ -501,9 +544,10 @@ return {
             suppressor = 'COMPONENT_AT_PI_SUPP'
         }
     },
-    ---<h4>Mini SMG (Submanchine Guns)</h4> 
+    ---<h4>Mini SMG (Submachine Guns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/d/d3/Mini-smg-icon.png/164px-Mini-smg-icon.png" width="100px">
     minismg = {
+        type = 'SUBMACHINE_GUN',
         name = 'WEAPON_MINISMG',
         label = 'Mini SMG',
         components = {
@@ -511,15 +555,17 @@ return {
             extended_clip = 'COMPONENT_MINISMG_CLIP_02'
         }
     },
-    ---<h4>Unholy Hellbringer (Submanchine Guns)</h4> 
+    ---<h4>Unholy Hellbringer (Submachine Guns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/8/8f/Unholy-hellbringer-icon.png/164px-Unholy-hellbringer-icon.png" width="150px">
     raycarbine = {
+        type = 'SUBMACHINE_GUN',
         name = 'WEAPON_RAYCARBINE',
         label = 'Unholy Heelbringer'
     },
-    ---<h4>Tactical SMG (Submanchine Guns)</h4> 
+    ---<h4>Tactical SMG (Submachine Guns)</h4> 
     ---<img src="https://wiki.rage.mp/images/b/bc/Tactical-smg-icon.png" width="100px">
     tecpistol = {
+        type = 'SUBMACHINE_GUN',
         name = 'WEAPON_TECPISTOL',
         label = 'Tactical SMG'
     },
@@ -528,6 +574,7 @@ return {
     ---<h4>Pump Shotgun (Shotguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/0/09/Pump-shotgun-icon.png/164px-Pump-shotgun-icon.png" width="150px">
     pumpshotgun = {
+        type = 'SHOTGUN',
         name = 'WEAPON_PUMPSHOTGUN',
         label = 'Pump Shotgun',
         components = {
@@ -539,6 +586,7 @@ return {
     ---<h4>Pump Shotgun MK2 (Shotguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/6/69/Pump-shotgun-mk2-icon.png/164px-Pump-shotgun-mk2-icon.png" width="150px">
     pumpshotgun_mk2 = {
+        type = 'SHOTGUN',
         name = 'WEAPON_PUMPSHOTGUN_MK2',
         label = 'Pump Shotgun MK2',
         components = {
@@ -569,6 +617,7 @@ return {
     ---<h4>Sawed-Off Shotgun (Shotguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/b/ba/Sawed-off-shotgun-icon.png/164px-Sawed-off-shotgun-icon.png" width="120px">
     sawnoffshotgun = {
+        type = 'SHOTGUN',
         name = 'WEAPON_SAWNOFFSHOTGUN',
         label = 'Sawed-Off Shotgun',
         components = {
@@ -578,6 +627,7 @@ return {
     ---<h4>Assault Shotgun (Shotguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/e/e3/Assault-shotgun-icon.png/164px-Assault-shotgun-icon.png" width="150px">
     assaultshotgun = {
+        type = 'SHOTGUN',
         name = 'WEAPON_ASSAULTSHOTGUN',
         label = 'Assault Shotgun',
         components = {
@@ -591,6 +641,7 @@ return {
     ---<h4>Bullpup Shotgun (Shotguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/7/7f/Bullpup-shotgun-icon.png/164px-Bullpup-shotgun-icon.png" width="150px">
     bullpupshotgun = {
+        type = 'SHOTGUN',
         name = 'WEAPON_BULLUPSHOTGUN',
         label = 'Bullpup Shotgun',
         components = {
@@ -602,11 +653,13 @@ return {
     ---<h4>Musket (Shotguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/8/8c/Musket-icon.png/164px-Musket-icon.png" width="150px">
     musket = {
+        type = 'SHOTGUN',
         name = 'WEAPON_MUSKET'
     },
     ---<h4>Heavy Shotgun (Shotguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/5/5d/Heavy-shotgun-icon.png/164px-Heavy-shotgun-icon.png" width="150px">
     heavyshotgun = {
+        type = 'SHOTGUN',
         name = 'WEAPON_HEAVYSHOTGUN',
         label = 'Heavy Shotgun',
         components = {
@@ -621,18 +674,21 @@ return {
     ---<h4>Double Barrel Shotgun (Shotguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/8/8d/Double-barrel-shotgun-icon.png/164px-Double-barrel-shotgun-icon.png" width="100px">
     dbshotgun = {
+        type = 'SHOTGUN',
         name = 'WEAPON_DBSHOTGUN',
         label = 'Double Barrel Shotgun'
     },
     ---<h4>Sweeper Shotgun (Shotguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/a/a8/Sweeper-shotgun-icon.png/164px-Sweeper-shotgun-icon.png" width="100px">
     autoshotgun = {
+        type = 'SHOTGUN',
         name = 'WEAPON_AUTOSHOTGUN',
         label = 'Sweeper Shotgun'
     },
     ---<h4>Combat Shotgun (Shotguns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/5/50/Combat-shotgun-icon.png/164px-Combat-shotgun-icon.png" width="150px">
     combatshotgun = {
+        type = 'SHOTGUN',
         name = 'WEAPON_COMBATSHOTGUN',
         label = 'Combat Shotgun',
         components = {
@@ -645,6 +701,7 @@ return {
     ---<h4>Assault Rifle (Assault Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/6/61/Assault-rifle-icon.png/164px-Assault-rifle-icon.png" width="150px">
     assaultrifle = {
+        type = 'ASSAULT_RIFLE',
         name = 'WEAPON_ASSAULTRIFLE',
         label = 'Assault Rifle',
         components = {
@@ -661,6 +718,7 @@ return {
     ---<h4>Assault Rifle MK2 (Assault Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/6/63/Assault-rifle-mk2-icon.png/164px-Assault-rifle-mk2-icon.png" width="150px">
     assaultrifle_mk2 = {
+        type = 'ASSAULT_RIFLE',
         name = 'WEAPON_ASSAULTRIFLE_MK2',
         label = 'Assault Rifle MK2',
         components = {
@@ -701,6 +759,7 @@ return {
     ---<h4>Carbine Rifle (Assault Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/7/73/Carbine-rifle-icon.png/164px-Carbine-rifle-icon.png" width="150px">
     carbinerifle = {
+        type = 'ASSAULT_RIFLE',
         name = 'WEAPON_CARBINERIFLE',
         label = 'Carbine Rifle',
         components = {
@@ -717,6 +776,7 @@ return {
     ---<h4>Carbine Rifle MK2 (Assault Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/3/3f/Carbine-rifle-mk2-icon.png/164px-Carbine-rifle-mk2-icon.png" width="150px">
     carbinerifle_mk2 = {
+        type = 'ASSAULT_RIFLE',
         name = 'WEAPON_CARBINERIFLE_MK2',
         label = 'Carbine Rifle MK2',
         components = {
@@ -757,6 +817,7 @@ return {
     ---<h4>Advanced Rifle (Assault Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/a/ae/Advanced-rifle-icon.png/164px-Advanced-rifle-icon.png" width="150px">
     advancedrifle = {
+        type = 'ASSAULT_RIFLE',
         name = 'WEAPON_ADVANCEDRIFLE',
         label = 'Advanced Rifle',
         components = {
@@ -772,6 +833,7 @@ return {
     ---<h4>Special Carbine (Assault Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/b/b7/Special-carbine-icon.png/164px-Special-carbine-icon.png" width="150px">
     specialcarbine = {
+        type = 'ASSAULT_RIFLE',
         name = 'WEAPON_SPECIALCARBINE',
         label = 'Special Carbine',
         components = {
@@ -788,6 +850,7 @@ return {
     ---<h4>Special Carbine MK2 (Assault Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/3/34/Special-carbine-mk2-icon.png/164px-Special-carbine-mk2-icon.png" width="150px">
     specialcarbine_mk2 = {
+        type = 'ASSAULT_RIFLE',
         name = 'WEAPON_SPECIALCARBINE_MK2',
         label = 'Special Carbine MK2',
         components = {
@@ -828,6 +891,7 @@ return {
     ---<h4>Bullpup Rifle (Assault Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/0/09/Bullpup-rifle-icon.png/164px-Bullpup-rifle-icon.png" width="150px">
     bullpuprifle = {
+        type = 'ASSAULT_RIFLE',
         name = 'WEAPON_BULLPUPRIFLE',
         label = 'Bullpup Rifle',
         components = {
@@ -843,6 +907,7 @@ return {
     ---<h4>Bullpup Rifle MK2 (Assault Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/e/e1/Bullpup-rifle-mk2-icon.png/164px-Bullpup-rifle-mk2-icon.png" width="150px">
     bullpuprifle_mk2 = {
+        type = 'ASSAULT_RIFLE',
         name = 'WEAPON_BULLPUPRIFLE_MK2',
         label = 'Bullpup Rifle MK2',
         components = {
@@ -883,6 +948,7 @@ return {
     ---<h4>Compact Rifle (Assault Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/c/c9/Compact-rifle-icon.png/164px-Compact-rifle-icon.png" width="100px">
     compactrifle = {
+        type = 'ASSAULT_RIFLE',
         name = 'WEAPON_COMPACTRIFLE',
         label = 'Compact Rifle',
         components = {
@@ -894,6 +960,7 @@ return {
     ---<h4>Military Rifle (Assault Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/0/01/Military-rifle-icon.png/164px-Military-rifle-icon.png" width="150px">
     militaryrifle = {
+        type = 'ASSAULT_RIFLE',
         name = 'WEAPON_MILITARYRIFLE',
         label = 'Military Rifle',
         components = {
@@ -908,12 +975,14 @@ return {
     ---<h4>Heavy Rifle (Assault Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/2/20/Heavy-rifle-icon.png/164px-Heavy-rifle-icon.png" width="150px">
     heavyrifle = {
+        type = 'ASSAULT_RIFLE',
         name = 'WEAPON_HEAVYRIFLE',
         label = 'Heavy Rifle'
     },
     ---<h4>Tactical Rifle (Assault Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/e/e8/Tactical-rifle-icon.png/164px-Tactical-rifle-icon.png" width="150px">
     tacticalrifle = {
+        type = 'ASSAULT_RIFLE',
         name = 'WEAPON_TACTICALRIFLE',
         label = 'Tactical Rifle'
     },
@@ -922,6 +991,7 @@ return {
     ---<h4>MG (Light Machine Guns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/9/98/Mg-icon.png/164px-Mg-icon.png" width="150px">
     mg = {
+        type = 'LIGHT_MACHINEGUN',
         name = 'WEAPON_MG',
         label = 'MG',
         components = {
@@ -934,6 +1004,7 @@ return {
     ---<h4>Combat MG (Light Machine Guns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/9/94/Combat-mg-icon.png/164px-Combat-mg-icon.png" width="150px">
     combatmg = {
+        type = 'LIGHT_MACHINEGUN',
         name = 'WEAPON_COMBATMG',
         label = 'Combat MG',
         components = {
@@ -947,6 +1018,7 @@ return {
     ---<h4>Combat MG MK2 (Light Machine Guns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/3/31/Combat-mg-mk2-icon.png/164px-Combat-mg-mk2-icon.png" width="150px">
     combatmg_mk2 = {
+        type = 'LIGHT_MACHINEGUN',
         name = 'WEAPON_COMBATMG_MK2',
         label = 'Combat MG MK2',
         components = {
@@ -985,6 +1057,7 @@ return {
     ---<h4>Gusenberg (Light Machine Guns)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/8/8f/Gusenberg-sweeper-icon.png/164px-Gusenberg-sweeper-icon.png" width="150px">
     gusenberg = {
+        type = 'LIGHT_MACHINEGUN',
         name = 'WEAPON_GUSENBERG',
         label = 'Gusenberg',
         components = {
@@ -997,6 +1070,7 @@ return {
     ---<h4>Sniper Rifle (Sniper Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/e/ec/Sniper-rifle-icon.png/164px-Sniper-rifle-icon.png" width="200px">
     sniperrifle = {
+        type = 'SNIPER_RIFLE',
         name = 'WEAPON_SNIPERRIFLE',
         label = 'Snier Rifle',
         components = {
@@ -1010,6 +1084,7 @@ return {
     ---<h4>Heavy Sniper (Sniper Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/5/54/Heavy-sniper-icon.png/164px-Heavy-sniper-icon.png" width="200px">
     heavysniper = {
+        type = 'SNIPER_RIFLE',
         name = 'WEAPON_HEAVYSNIPER',
         label = 'Heavy Sniper',
         components = {
@@ -1021,6 +1096,7 @@ return {
     ---<h4>Heavy Sniper MK2 (Sniper Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/c/cf/Heavy-sniper-mk2-icon.png/164px-Heavy-sniper-mk2-icon.png" width="200px">
     heavysniper_mk2 = {
+        type = 'SNIPER_RIFLE',
         name = 'WEAPON_HEAVYSNIPER_MK2',
         label = 'Heavy Sniper MK2',
         components = {
@@ -1055,6 +1131,7 @@ return {
     ---<h4>Marksman Rifle (Sniper Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/2/22/Marksman-rifle-icon.png/164px-Marksman-rifle-icon.png" width="200px">
     marksmanrifle = {
+        type = 'SNIPER_RIFLE',
         name = 'WEAPON_MARKSMANRIFLE',
         label = 'Marksman Rifle',
         components = {
@@ -1070,6 +1147,7 @@ return {
     ---<h4>Marksman Rifle MK2 (Sniper Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/1/17/Marksman-rifle-mk2-icon.png/164px-Marksman-rifle-mk2-icon.png" width="200px">
     marksmanrifle_mk2 = {
+        type = 'SNIPER_RIFLE',
         name = 'WEAPON_MARKSMANRIFLE_MK2',
         label = 'Marksman Rifle MK2',
         components = {
@@ -1110,6 +1188,7 @@ return {
     ---<h4>Precision Rifle (Sniper Rifles)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/5/5b/Precision-rifle-icon.png/164px-Precision-rifle-icon.png" width="200px">
     precisionrifle = {
+        type = 'SNIPER_RIFLE',
         name = 'WEAPON_PRECISIONRIFLE',
         label = 'Precision Rifle'
     },
@@ -1118,12 +1197,14 @@ return {
     ---<h4>RPG (Heavy Weapons)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/7/7d/Rocket-launcher-icon.png/164px-Rocket-launcher-icon.png" width="200px">
     rpg = {
+        type = 'HEAVY_WEAPON',
         name = 'WEAPON_RPG',
         label = 'RPG'
     },
     ---<h4>Grenade Launcher (Heavy Weapons)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/a/ae/Grenade-launcher-icon.png/164px-Grenade-launcher-icon.png" width="200px">
     grenadelauncher = {
+        type = 'HEAVY_WEAPON',
         name = 'WEAPON_GRENADELAUNCHER',
         label = 'Grenade Launcher',
         components = {
@@ -1136,30 +1217,35 @@ return {
     ---<h4>Grenade Launcher Smoke (Heavy Weapons)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/a/ae/Grenade-launcher-icon.png/164px-Grenade-launcher-icon.png" width="200px">
     grenadelauncher_smoke = {
+        type = 'HEAVY_WEAPON',
         name = 'WEAPON_GRENADELAUNCHER_SMOKE',
         label = 'Grenade Launcher Smoke'
     },
     ---<h4>Minigun (Heavy Weapons)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/8/8b/Minigun-icon.png/164px-Minigun-icon.png" width="200px">
     minigun = {
+        type = 'HEAVY_WEAPON',
         name = 'WEAPON_MINIGUN',
         label = 'Minigun'
     }, 
     ---<h4>Firework Launcher (Heavy Weapons)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/5/54/Firework-launcher-icon.png/164px-Firework-launcher-icon.png" width="200px">
     firework = {
+        type = 'HEAVY_WEAPON',
         name = 'WEAPON_FIREWORK',
         label = 'Firework Launcher'
     },
     ---<h4>Railgun (Heavy Weapons)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/a/ad/Railgun-icon.png/164px-Railgun-icon.png" width="200px">
     railgun = {
+        type = 'HEAVY_WEAPON',
         name = 'WEAPON_RAILGUN',
         label = 'Railgun',
     },
     ---<h4>Homing Launcher (Heavy Weapons)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/1/14/Homing-launcher-icon.png/164px-Homing-launcher-icon.png" width="200px">
     hominglauncher = {
+        type = 'HEAVY_WEAPON',
         name = 'WEAPON_HOMINGLAUNCHER',
         label = 'Homing Launcher',
     },
@@ -1172,17 +1258,21 @@ return {
     ---<h4>Widowmaker (Heavy Weapons)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/e/ec/Widowmaker-icon.png/164px-Widowmaker-icon.png" width="200px">
     rayminigun = {
+        type = 'HEAVY_WEAPON',
         name = 'WEAPON_RAYMINIGUN',
         label = 'Widowmaker',
     },
     ---<h4>Compact EMP Launcher (Heavy Weapons)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/e/ed/EMP-launcher-icon.png/164px-EMP-launcher-icon.png" width="120px">
     emplauncher = {
+        type = 'HEAVY_WEAPON',
         name = 'WEAPON_EMPLAUNCHER',
+        label = 'EMP Launcher'
     },
     ---<h4>Railgun XM3 (Heavy Weapons)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/a/ad/Railgun-icon.png/164px-Railgun-icon.png" width="200px">
     railgunxm3 = {
+        type = 'HEAVY_WEAPON',
         name = 'WEAPON_RAILGUNXM3',
         label = 'Railgun XM3'
     },
@@ -1191,66 +1281,77 @@ return {
     ---<h4>Grenade (Throwables)</h4> 
     ---<img src="https://wiki.rage.mp/images/5/54/Grenade-icon.png" width="50px">
     grenade = {
+        type = 'THROWABLE',
         name = 'WEAPON_GRENADE',
         label = 'Grenade'
     },
     ---<h4>BZ Gas (Throwables)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/d/d3/Bz-gas-icon.png/56px-Bz-gas-icon.png" width="40px">
     bzgas = {
+        type = 'THROWABLE',
         name = 'WEAPON_BZGAS',
         label = 'BZ Gas'
     },
     ---<h4>Molotov Cocktail (Throwables)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/4/46/Molotov-icon.png/120px-Molotov-icon.png" width="100px">
     molotov = {
+        type = 'THROWABLE',
         name = 'WEAPON_MOLOTOV',
         label = 'Molotov Cocktail'
     },
     ---<h4>Tear Gas (Throwables)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/8/8a/Tear-gas-icon.png/56px-Tear-gas-icon.png" width="40px">
     smokegrenade = {
+        type = 'THROWABLE',
         name = 'WEAPON_SMOKEGRENADE',
         label = 'Tear Gas'
     },
     ---<h4>Flare (Throwables)</h4> 
     ---<img src="https://wiki.rage.mp/images/0/09/Flare-icon.png" width="100px">
     flare = {
+        type = 'THROWABLE',
         name = 'WEAPON_FLARE',
         label = 'Flare'
     },
     ---<h4>Sticky Bomb (Throwables)</h4> 
     ---<img src="https://wiki.rage.mp/images/3/3a/Sticky-bomb-icon.png" width="100px">
     stickybomb = {
+        type = 'THROWABLE',
         name = 'WEAPON_STICKYBOMB',
         label = 'Sticky Bomb'
     },
     ---<h4>Proximity Mine (Throwables)</h4> 
     ---<img src="https://wiki.rage.mp/images/a/a8/Proximity-mines-icon.png" width="100px">
     proxmine = {
+        type = 'THROWABLE',
         name = 'WEAPON_PROXMINE',
         label = 'Proximity Mine'
     },
     ---<h4>Snowball (Throwables)</h4> 
     ---<img src="https://wiki.rage.mp/images/0/04/Snowball-icon.png" width="70px">
     snowball = {
+        type = 'THROWABLE',
         name = 'WEAPON_SNOWBALL',
         label = 'Snowball'
     },
     ---<h4>Pipe Bomb (Throwables)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/d/dc/Pipe-bomb-icon.png/164px-Pipe-bomb-icon.png" width="100px">
     pipebomb = {
+        type = 'THROWABLE',
         name = 'WEAPON_PIPEBOMB',
         label = 'Pipe Bomb'
     },
     ---<h4>Baseball (Throwables)</h4> 
     ---<img src="https://wiki.rage.mp/images/4/4b/Ball-icon.png" width="70px">
     ball = {
+        type = 'THROWABLE',
         name = 'WEAPON_BALL',
         label = 'Baseball'
     },
     ---<h4>Acid Package (Throwables)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/0/01/Acid-package-icon.png/164px-Acid-package-icon.png" width="120px">
     acidpackage = {
+        type = 'THROWABLE',
         name = 'WEAPON_ACIDPACKAGE',
         label = 'Acid Package'
     },
@@ -1259,26 +1360,31 @@ return {
     ---<h4>Jerry Can (Miscellaneous)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/2/2b/Petrolcan-icon.png/94px-Petrolcan-icon.png" width="70px">
     petrolcan = {
+        type = 'MISC',
         name = 'WEAPON_PETROLCAN'
     },
     ---<h4>Fire Extinguisher (Miscellaneous)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/1/13/Fire2.png/51px-Fire2.png" width="50px">
     fireextinguisher = {
+        type = 'MISC',
         name = 'WEAPON_FIREEXTINGUISHER'
     },
     ---<h4>Parachute (Miscellaneous)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/2/24/Parachute-icon.png/93px-Parachute-icon.png" width="70px">
     parachute = {
+        type = 'MISC',
         name = 'WEAPON_PARACHUTE'
     },
     ---<h4>Hazardous Jerry Can (Miscellaneous)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/2/2b/Petrolcan-icon.png/94px-Petrolcan-icon.png" width="70px">
     hazardcan = {
+        type = 'MISC',
         name = 'WEAPON_HAZARDCAN'
     },
     ---<h4>Fertilizer Can (Miscellaneous)</h4> 
     ---<img src="https://wiki.rage.mp/images/thumb/2/2b/Petrolcan-icon.png/94px-Petrolcan-icon.png" width="70px">
     fertilizercan = {
+        type = 'MISC',
         name = 'WEAPON_FERTILIZERCAN'
     }
 }
